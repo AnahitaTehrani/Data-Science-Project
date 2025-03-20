@@ -1,0 +1,421 @@
+2025-03-20 12:48:26,045 - SpotifyEventScraper - INFO - Scraping Spotify press releases...
+2025-03-20 12:48:28,219 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/1/
+2025-03-20 12:48:34,468 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/1/
+2025-03-20 12:48:41,519 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/1/
+2025-03-20 12:48:47,968 - SpotifyEventScraper - WARNING - Failed to fetch page 1 after retries
+2025-03-20 12:48:49,465 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/2/
+2025-03-20 12:48:56,490 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/2/
+2025-03-20 12:49:02,361 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/2/
+2025-03-20 12:49:08,962 - SpotifyEventScraper - WARNING - Failed to fetch page 2 after retries
+2025-03-20 12:49:10,590 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/3/
+2025-03-20 12:49:18,296 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/3/
+2025-03-20 12:49:25,653 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/3/
+2025-03-20 12:49:31,374 - SpotifyEventScraper - WARNING - Failed to fetch page 3 after retries
+2025-03-20 12:49:32,759 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/4/
+2025-03-20 12:49:38,708 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/4/
+2025-03-20 12:49:45,685 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/4/
+2025-03-20 12:49:49,008 - SpotifyEventScraper - WARNING - Failed to fetch page 4 after retries
+2025-03-20 12:49:50,625 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/5/
+2025-03-20 12:49:56,243 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/5/
+2025-03-20 12:50:01,630 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/5/
+2025-03-20 12:50:05,574 - SpotifyEventScraper - WARNING - Failed to fetch page 5 after retries
+2025-03-20 12:50:07,152 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/6/
+2025-03-20 12:50:15,821 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/6/
+2025-03-20 12:50:22,723 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/6/
+2025-03-20 12:50:27,255 - SpotifyEventScraper - WARNING - Failed to fetch page 6 after retries
+2025-03-20 12:50:29,261 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/7/
+2025-03-20 12:50:36,557 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/7/
+2025-03-20 12:50:44,119 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/7/
+2025-03-20 12:50:50,944 - SpotifyEventScraper - WARNING - Failed to fetch page 7 after retries
+2025-03-20 12:50:52,719 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/8/
+2025-03-20 12:50:57,787 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/8/
+2025-03-20 12:51:03,309 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/8/
+2025-03-20 12:51:08,655 - SpotifyEventScraper - WARNING - Failed to fetch page 8 after retries
+2025-03-20 12:51:10,842 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/9/
+2025-03-20 12:51:17,122 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/9/
+2025-03-20 12:51:24,229 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/9/
+2025-03-20 12:51:30,602 - SpotifyEventScraper - WARNING - Failed to fetch page 9 after retries
+2025-03-20 12:51:31,954 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/10/
+2025-03-20 12:51:36,976 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/10/
+2025-03-20 12:51:44,494 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/10/
+2025-03-20 12:51:49,256 - SpotifyEventScraper - WARNING - Failed to fetch page 10 after retries
+2025-03-20 12:51:50,960 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/11/
+2025-03-20 12:51:56,183 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/11/
+2025-03-20 12:52:02,059 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/11/
+2025-03-20 12:52:07,455 - SpotifyEventScraper - WARNING - Failed to fetch page 11 after retries
+2025-03-20 12:52:09,911 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/12/
+2025-03-20 12:52:17,324 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/12/
+2025-03-20 12:52:24,101 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/12/
+2025-03-20 12:52:30,739 - SpotifyEventScraper - WARNING - Failed to fetch page 12 after retries
+2025-03-20 12:52:32,129 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/13/
+2025-03-20 12:52:37,372 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/13/
+2025-03-20 12:52:45,116 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/13/
+2025-03-20 12:52:48,672 - SpotifyEventScraper - WARNING - Failed to fetch page 13 after retries
+2025-03-20 12:52:50,276 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/14/
+2025-03-20 12:52:55,563 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/14/
+2025-03-20 12:53:00,231 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/14/
+2025-03-20 12:53:04,978 - SpotifyEventScraper - WARNING - Failed to fetch page 14 after retries
+2025-03-20 12:53:06,562 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/15/
+2025-03-20 12:53:12,455 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/15/
+2025-03-20 12:55:09,598 - SpotifyEventScraper - INFO - Scraping Spotify press releases...
+2025-03-20 12:55:11,784 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/1/
+2025-03-20 12:55:17,421 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/1/
+2025-03-20 12:55:24,412 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/1/
+2025-03-20 12:55:31,091 - SpotifyEventScraper - WARNING - Failed to fetch page 1 after retries
+2025-03-20 12:55:32,610 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/2/
+2025-03-20 12:55:40,873 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/2/
+2025-03-20 12:55:48,814 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/2/
+2025-03-20 12:55:55,166 - SpotifyEventScraper - WARNING - Failed to fetch page 2 after retries
+2025-03-20 12:55:57,105 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/3/
+2025-03-20 12:56:05,902 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/3/
+2025-03-20 12:56:11,437 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/3/
+2025-03-20 12:56:17,330 - SpotifyEventScraper - WARNING - Failed to fetch page 3 after retries
+2025-03-20 12:56:18,853 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/4/
+2025-03-20 12:56:23,900 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/4/
+2025-03-20 12:56:28,870 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/4/
+2025-03-20 12:56:33,487 - SpotifyEventScraper - WARNING - Failed to fetch page 4 after retries
+2025-03-20 12:56:35,028 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/5/
+2025-03-20 12:56:42,580 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/5/
+2025-03-20 12:56:51,047 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/5/
+2025-03-20 12:56:57,223 - SpotifyEventScraper - WARNING - Failed to fetch page 5 after retries
+2025-03-20 12:56:58,668 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/6/
+2025-03-20 12:57:06,512 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/6/
+2025-03-20 12:57:12,242 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/6/
+2025-03-20 12:57:17,939 - SpotifyEventScraper - WARNING - Failed to fetch page 6 after retries
+2025-03-20 12:57:19,787 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/7/
+2025-03-20 12:57:28,514 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/7/
+2025-03-20 12:57:35,820 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/7/
+2025-03-20 12:57:42,546 - SpotifyEventScraper - WARNING - Failed to fetch page 7 after retries
+2025-03-20 12:57:44,239 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/8/
+2025-03-20 12:57:50,649 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/8/
+2025-03-20 12:57:57,968 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/8/
+2025-03-20 12:58:01,072 - SpotifyEventScraper - WARNING - Failed to fetch page 8 after retries
+2025-03-20 12:58:02,866 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/9/
+2025-03-20 12:58:07,855 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/9/
+2025-03-20 12:58:14,469 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/9/
+2025-03-20 12:58:20,177 - SpotifyEventScraper - WARNING - Failed to fetch page 9 after retries
+2025-03-20 12:58:22,347 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/10/
+2025-03-20 12:58:28,503 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/10/
+2025-03-20 12:58:35,967 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/10/
+2025-03-20 12:58:41,180 - SpotifyEventScraper - WARNING - Failed to fetch page 10 after retries
+2025-03-20 12:58:42,798 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/11/
+2025-03-20 12:58:49,065 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/11/
+2025-03-20 12:58:57,463 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/11/
+2025-03-20 12:59:04,357 - SpotifyEventScraper - WARNING - Failed to fetch page 11 after retries
+2025-03-20 12:59:06,335 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/12/
+2025-03-20 12:59:12,727 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/12/
+2025-03-20 12:59:18,575 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/12/
+2025-03-20 12:59:21,800 - SpotifyEventScraper - WARNING - Failed to fetch page 12 after retries
+2025-03-20 12:59:23,436 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/13/
+2025-03-20 12:59:28,863 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/13/
+2025-03-20 12:59:34,076 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/13/
+2025-03-20 12:59:39,906 - SpotifyEventScraper - WARNING - Failed to fetch page 13 after retries
+2025-03-20 12:59:41,507 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/14/
+2025-03-20 12:59:49,596 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/14/
+2025-03-20 12:59:55,180 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/14/
+2025-03-20 13:00:01,206 - SpotifyEventScraper - WARNING - Failed to fetch page 14 after retries
+2025-03-20 13:00:03,013 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/15/
+2025-03-20 13:00:09,806 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/15/
+2025-03-20 13:00:17,270 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/15/
+2025-03-20 13:00:21,553 - SpotifyEventScraper - WARNING - Failed to fetch page 15 after retries
+2025-03-20 13:00:23,405 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/16/
+2025-03-20 13:00:31,242 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/16/
+2025-03-20 13:00:38,397 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/16/
+2025-03-20 13:00:45,043 - SpotifyEventScraper - WARNING - Failed to fetch page 16 after retries
+2025-03-20 13:00:46,869 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/17/
+2025-03-20 13:00:51,627 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/17/
+2025-03-20 13:00:56,744 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/17/
+2025-03-20 13:01:01,280 - SpotifyEventScraper - WARNING - Failed to fetch page 17 after retries
+2025-03-20 13:01:03,321 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/18/
+2025-03-20 13:01:11,769 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/18/
+2025-03-20 13:01:20,039 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/18/
+2025-03-20 13:01:26,039 - SpotifyEventScraper - WARNING - Failed to fetch page 18 after retries
+2025-03-20 13:01:28,161 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/19/
+2025-03-20 13:01:37,119 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/19/
+2025-03-20 13:01:45,658 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/19/
+2025-03-20 13:01:50,403 - SpotifyEventScraper - WARNING - Failed to fetch page 19 after retries
+2025-03-20 13:01:52,168 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/20/
+2025-03-20 13:01:58,673 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/20/
+2025-03-20 13:02:06,110 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/20/
+2025-03-20 13:02:12,150 - SpotifyEventScraper - WARNING - Failed to fetch page 20 after retries
+2025-03-20 13:02:13,926 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/21/
+2025-03-20 13:02:21,822 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/21/
+2025-03-20 13:02:28,131 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/21/
+2025-03-20 13:02:32,067 - SpotifyEventScraper - WARNING - Failed to fetch page 21 after retries
+2025-03-20 13:02:34,255 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/22/
+2025-03-20 13:02:41,491 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/22/
+2025-03-20 13:02:48,112 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/22/
+2025-03-20 13:02:52,515 - SpotifyEventScraper - WARNING - Failed to fetch page 22 after retries
+2025-03-20 13:02:54,077 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/23/
+2025-03-20 13:03:00,060 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/23/
+2025-03-20 13:03:07,591 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/23/
+2025-03-20 13:03:13,270 - SpotifyEventScraper - WARNING - Failed to fetch page 23 after retries
+2025-03-20 13:03:15,216 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/24/
+2025-03-20 13:03:22,522 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/24/
+2025-03-20 13:03:30,917 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/24/
+2025-03-20 13:03:37,295 - SpotifyEventScraper - WARNING - Failed to fetch page 24 after retries
+2025-03-20 13:03:39,073 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/25/
+2025-03-20 13:03:47,269 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/25/
+2025-03-20 13:03:53,982 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/25/
+2025-03-20 13:04:00,177 - SpotifyEventScraper - WARNING - Failed to fetch page 25 after retries
+2025-03-20 13:04:02,515 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/26/
+2025-03-20 13:04:07,852 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/26/
+2025-03-20 13:04:13,248 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/26/
+2025-03-20 13:04:19,462 - SpotifyEventScraper - WARNING - Failed to fetch page 26 after retries
+2025-03-20 13:04:21,383 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/27/
+2025-03-20 13:04:28,341 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/27/
+2025-03-20 13:04:36,319 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/27/
+2025-03-20 13:04:42,553 - SpotifyEventScraper - WARNING - Failed to fetch page 27 after retries
+2025-03-20 13:04:44,345 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/28/
+2025-03-20 13:04:52,770 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/28/
+2025-03-20 13:05:01,228 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/28/
+2025-03-20 13:05:04,376 - SpotifyEventScraper - WARNING - Failed to fetch page 28 after retries
+2025-03-20 13:05:07,165 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/29/
+2025-03-20 13:05:13,565 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/29/
+2025-03-20 13:05:22,167 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/29/
+2025-03-20 13:05:25,234 - SpotifyEventScraper - WARNING - Failed to fetch page 29 after retries
+2025-03-20 13:05:26,669 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/30/
+2025-03-20 13:05:33,298 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/30/
+2025-03-20 13:05:41,761 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/30/
+2025-03-20 13:05:46,602 - SpotifyEventScraper - WARNING - Failed to fetch page 30 after retries
+2025-03-20 13:05:48,237 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/31/
+2025-03-20 13:05:55,240 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/31/
+2025-03-20 13:06:03,450 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/31/
+2025-03-20 13:06:07,105 - SpotifyEventScraper - WARNING - Failed to fetch page 31 after retries
+2025-03-20 13:06:08,807 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/32/
+2025-03-20 13:06:14,994 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/32/
+2025-03-20 13:06:23,839 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/32/
+2025-03-20 13:06:26,851 - SpotifyEventScraper - WARNING - Failed to fetch page 32 after retries
+2025-03-20 13:06:28,811 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/33/
+2025-03-20 13:06:37,114 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/33/
+2025-03-20 13:06:41,860 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/33/
+2025-03-20 13:06:47,379 - SpotifyEventScraper - WARNING - Failed to fetch page 33 after retries
+2025-03-20 13:06:49,172 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/34/
+2025-03-20 13:06:55,050 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/34/
+2025-03-20 13:07:03,383 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/34/
+2025-03-20 13:07:07,285 - SpotifyEventScraper - WARNING - Failed to fetch page 34 after retries
+2025-03-20 13:07:08,729 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/35/
+2025-03-20 13:07:17,111 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/35/
+2025-03-20 13:07:22,275 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/35/
+2025-03-20 13:07:28,581 - SpotifyEventScraper - WARNING - Failed to fetch page 35 after retries
+2025-03-20 13:07:29,920 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/36/
+2025-03-20 13:07:36,975 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/36/
+2025-03-20 13:07:44,337 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/36/
+2025-03-20 13:07:50,119 - SpotifyEventScraper - WARNING - Failed to fetch page 36 after retries
+2025-03-20 13:07:51,679 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/37/
+2025-03-20 13:07:56,715 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/37/
+2025-03-20 13:08:02,480 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/37/
+2025-03-20 13:08:08,842 - SpotifyEventScraper - WARNING - Failed to fetch page 37 after retries
+2025-03-20 13:08:10,972 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/38/
+2025-03-20 13:08:18,353 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/38/
+2025-03-20 13:08:25,537 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/38/
+2025-03-20 13:08:31,837 - SpotifyEventScraper - WARNING - Failed to fetch page 38 after retries
+2025-03-20 13:08:33,923 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/39/
+2025-03-20 13:08:42,743 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/39/
+2025-03-20 13:08:51,332 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/39/
+2025-03-20 13:08:55,502 - SpotifyEventScraper - WARNING - Failed to fetch page 39 after retries
+2025-03-20 13:08:57,889 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/40/
+2025-03-20 13:09:04,450 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/40/
+2025-03-20 13:09:12,305 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/40/
+2025-03-20 13:09:15,390 - SpotifyEventScraper - WARNING - Failed to fetch page 40 after retries
+2025-03-20 13:09:17,128 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/41/
+2025-03-20 13:09:22,635 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/41/
+2025-03-20 13:09:28,810 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/41/
+2025-03-20 13:09:33,412 - SpotifyEventScraper - WARNING - Failed to fetch page 41 after retries
+2025-03-20 13:09:35,142 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/42/
+2025-03-20 13:09:41,561 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/42/
+2025-03-20 13:09:48,029 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/42/
+2025-03-20 13:09:54,866 - SpotifyEventScraper - WARNING - Failed to fetch page 42 after retries
+2025-03-20 13:09:57,081 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/43/
+2025-03-20 13:10:04,790 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/43/
+2025-03-20 13:10:13,038 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/43/
+2025-03-20 13:10:16,321 - SpotifyEventScraper - WARNING - Failed to fetch page 43 after retries
+2025-03-20 13:10:18,083 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/44/
+2025-03-20 13:10:26,198 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/44/
+2025-03-20 13:10:32,495 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/44/
+2025-03-20 13:10:39,282 - SpotifyEventScraper - WARNING - Failed to fetch page 44 after retries
+2025-03-20 13:10:41,087 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/45/
+2025-03-20 13:10:49,992 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/45/
+2025-03-20 13:10:57,215 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/45/
+2025-03-20 13:11:00,954 - SpotifyEventScraper - WARNING - Failed to fetch page 45 after retries
+2025-03-20 13:11:02,557 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/46/
+2025-03-20 13:11:08,804 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/46/
+2025-03-20 13:11:15,142 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/46/
+2025-03-20 13:11:18,205 - SpotifyEventScraper - WARNING - Failed to fetch page 46 after retries
+2025-03-20 13:11:20,612 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/47/
+2025-03-20 13:11:28,606 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/47/
+2025-03-20 13:11:37,465 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/47/
+2025-03-20 13:11:43,301 - SpotifyEventScraper - WARNING - Failed to fetch page 47 after retries
+2025-03-20 13:11:45,195 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/48/
+2025-03-20 13:11:51,351 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/48/
+2025-03-20 13:11:58,934 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/48/
+2025-03-20 13:12:02,897 - SpotifyEventScraper - WARNING - Failed to fetch page 48 after retries
+2025-03-20 13:12:04,516 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/49/
+2025-03-20 13:12:09,924 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/49/
+2025-03-20 13:12:17,984 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/49/
+2025-03-20 13:12:23,365 - SpotifyEventScraper - WARNING - Failed to fetch page 49 after retries
+2025-03-20 13:12:25,017 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/50/
+2025-03-20 13:12:30,265 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/50/
+2025-03-20 13:12:36,325 - SpotifyEventScraper - WARNING - Got status code 404 for https://newsroom.spotify.com/news-releases/page/50/
+2025-03-20 13:12:42,553 - SpotifyEventScraper - WARNING - Failed to fetch page 50 after retries
+2025-03-20 13:12:42,554 - SpotifyEventScraper - INFO - Found 0 events from Spotify Newsroom
+2025-03-20 13:12:42,554 - SpotifyEventScraper - INFO - Scraping Music Business Worldwide...
+2025-03-20 13:12:42,685 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/1/?s=spotify
+2025-03-20 13:12:48,134 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/1/?s=spotify
+2025-03-20 13:12:51,361 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/1/?s=spotify
+2025-03-20 13:12:55,202 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/2/?s=spotify
+2025-03-20 13:12:58,743 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/2/?s=spotify
+2025-03-20 13:13:05,659 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/2/?s=spotify
+2025-03-20 13:13:11,378 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/3/?s=spotify
+2025-03-20 13:13:18,029 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/3/?s=spotify
+2025-03-20 13:13:23,367 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/3/?s=spotify
+2025-03-20 13:13:29,451 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/4/?s=spotify
+2025-03-20 13:13:36,227 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/4/?s=spotify
+2025-03-20 13:13:41,154 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/4/?s=spotify
+2025-03-20 13:13:44,325 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/5/?s=spotify
+2025-03-20 13:13:48,062 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/5/?s=spotify
+2025-03-20 13:13:52,467 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/5/?s=spotify
+2025-03-20 13:13:58,359 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/6/?s=spotify
+2025-03-20 13:14:02,044 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/6/?s=spotify
+2025-03-20 13:14:05,947 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/6/?s=spotify
+2025-03-20 13:14:12,251 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/7/?s=spotify
+2025-03-20 13:14:16,160 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/7/?s=spotify
+2025-03-20 13:14:22,340 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/7/?s=spotify
+2025-03-20 13:14:27,419 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/8/?s=spotify
+2025-03-20 13:14:33,779 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/8/?s=spotify
+2025-03-20 13:14:37,245 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/8/?s=spotify
+2025-03-20 13:14:42,490 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/9/?s=spotify
+2025-03-20 13:14:45,700 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/9/?s=spotify
+2025-03-20 13:14:51,380 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/9/?s=spotify
+2025-03-20 13:14:56,281 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/10/?s=spotify
+2025-03-20 13:15:03,057 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/10/?s=spotify
+2025-03-20 13:15:07,555 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/10/?s=spotify
+2025-03-20 13:15:11,500 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/11/?s=spotify
+2025-03-20 13:15:15,202 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/11/?s=spotify
+2025-03-20 13:15:21,777 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/11/?s=spotify
+2025-03-20 13:15:27,200 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/12/?s=spotify
+2025-03-20 13:15:33,648 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/12/?s=spotify
+2025-03-20 13:15:38,102 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/12/?s=spotify
+2025-03-20 13:15:42,979 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/13/?s=spotify
+2025-03-20 13:15:46,110 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/13/?s=spotify
+2025-03-20 13:15:51,480 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/13/?s=spotify
+2025-03-20 13:15:56,760 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/14/?s=spotify
+2025-03-20 13:16:03,434 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/14/?s=spotify
+2025-03-20 13:16:10,267 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/14/?s=spotify
+2025-03-20 13:16:13,913 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/15/?s=spotify
+2025-03-20 13:16:19,510 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/15/?s=spotify
+2025-03-20 13:16:26,245 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/15/?s=spotify
+2025-03-20 13:16:29,647 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/16/?s=spotify
+2025-03-20 13:16:35,511 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/16/?s=spotify
+2025-03-20 13:16:40,336 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/16/?s=spotify
+2025-03-20 13:16:45,759 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/17/?s=spotify
+2025-03-20 13:16:50,416 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/17/?s=spotify
+2025-03-20 13:16:56,222 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/17/?s=spotify
+2025-03-20 13:17:01,473 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/18/?s=spotify
+2025-03-20 13:17:08,356 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/18/?s=spotify
+2025-03-20 13:17:13,371 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/18/?s=spotify
+2025-03-20 13:17:18,897 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/19/?s=spotify
+2025-03-20 13:17:24,786 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/19/?s=spotify
+2025-03-20 13:17:28,343 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/19/?s=spotify
+2025-03-20 13:17:34,956 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/20/?s=spotify
+2025-03-20 13:17:40,132 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/20/?s=spotify
+2025-03-20 13:17:43,262 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/20/?s=spotify
+2025-03-20 13:17:46,508 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/21/?s=spotify
+2025-03-20 13:17:53,332 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/21/?s=spotify
+2025-03-20 13:17:59,925 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/21/?s=spotify
+2025-03-20 13:18:03,696 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/22/?s=spotify
+2025-03-20 13:18:09,475 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/22/?s=spotify
+2025-03-20 13:18:12,694 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/22/?s=spotify
+2025-03-20 13:18:18,870 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/23/?s=spotify
+2025-03-20 13:18:25,416 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/23/?s=spotify
+2025-03-20 13:18:31,959 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/23/?s=spotify
+2025-03-20 13:18:37,316 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/24/?s=spotify
+2025-03-20 13:18:44,109 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/24/?s=spotify
+2025-03-20 13:18:49,990 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/24/?s=spotify
+2025-03-20 13:18:53,923 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/25/?s=spotify
+2025-03-20 13:18:57,454 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/25/?s=spotify
+2025-03-20 13:19:02,117 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/25/?s=spotify
+2025-03-20 13:19:09,024 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/26/?s=spotify
+2025-03-20 13:19:14,751 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/26/?s=spotify
+2025-03-20 13:19:19,371 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/26/?s=spotify
+2025-03-20 13:19:25,751 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/27/?s=spotify
+2025-03-20 13:19:30,106 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/27/?s=spotify
+2025-03-20 13:19:34,319 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/27/?s=spotify
+2025-03-20 13:19:41,297 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/28/?s=spotify
+2025-03-20 13:19:44,702 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/28/?s=spotify
+2025-03-20 13:19:48,981 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/28/?s=spotify
+2025-03-20 13:19:56,025 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/29/?s=spotify
+2025-03-20 13:19:59,471 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/29/?s=spotify
+2025-03-20 13:20:03,167 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/29/?s=spotify
+2025-03-20 13:20:07,530 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/30/?s=spotify
+2025-03-20 13:20:10,899 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/30/?s=spotify
+2025-03-20 13:20:17,473 - SpotifyEventScraper - WARNING - Got status code 403 for https://www.musicbusinessworldwide.com/page/30/?s=spotify
+2025-03-20 13:20:23,273 - SpotifyEventScraper - INFO - Found 0 total events after MBW scraping
+2025-03-20 13:20:23,274 - SpotifyEventScraper - INFO - Scraping Variety for Spotify news...
+2025-03-20 13:20:26,507 - SpotifyEventScraper - INFO - Found 0 total events after Variety scraping
+2025-03-20 13:20:26,508 - SpotifyEventScraper - INFO - Scraping SEC filings for Spotify...
+2025-03-20 13:20:26,820 - SpotifyEventScraper - INFO - Added 74 SEC filings
+2025-03-20 13:20:26,821 - SpotifyEventScraper - INFO - Scraping Spotify investor relations...
+2025-03-20 13:20:26,985 - SpotifyEventScraper - WARNING - Got status code 403 for https://investors.spotify.com/financials/default.aspx
+2025-03-20 13:20:30,324 - SpotifyEventScraper - WARNING - Got status code 403 for https://investors.spotify.com/financials/default.aspx
+2025-03-20 13:20:36,292 - SpotifyEventScraper - WARNING - Got status code 403 for https://investors.spotify.com/financials/default.aspx
+2025-03-20 13:20:41,515 - SpotifyEventScraper - INFO - Deduplicating 74 events...
+2025-03-20 13:20:41,516 - SpotifyEventScraper - INFO - Removed 14 duplicate events
+2025-03-20 13:20:41,519 - SpotifyEventScraper - INFO - Saved 60 events to spotify_events_2015_2024.csv
+2025-03-20 13:20:41,519 - SpotifyEventScraper - INFO - Events by year:
+2025-03-20 13:20:41,520 - SpotifyEventScraper - INFO -   2015: 0 events
+2025-03-20 13:20:41,520 - SpotifyEventScraper - INFO -   2016: 0 events
+2025-03-20 13:20:41,520 - SpotifyEventScraper - INFO -   2017: 0 events
+2025-03-20 13:20:41,520 - SpotifyEventScraper - INFO -   2018: 8 events
+2025-03-20 13:20:41,520 - SpotifyEventScraper - INFO -   2019: 8 events
+2025-03-20 13:20:41,520 - SpotifyEventScraper - INFO -   2020: 7 events
+2025-03-20 13:20:41,520 - SpotifyEventScraper - INFO -   2021: 8 events
+2025-03-20 13:20:41,520 - SpotifyEventScraper - INFO -   2022: 7 events
+2025-03-20 13:20:41,520 - SpotifyEventScraper - INFO -   2023: 12 events
+2025-03-20 13:20:41,520 - SpotifyEventScraper - INFO -   2024: 10 events
+2025-03-20 13:20:41,520 - SpotifyEventScraper - INFO - Events by type:
+2025-03-20 13:20:41,520 - SpotifyEventScraper - INFO -   SEC Filing: 60 events
+2025-03-20 13:20:41,520 - SpotifyEventScraper - INFO - Events by source:
+2025-03-20 13:20:41,520 - SpotifyEventScraper - INFO -   SEC EDGAR: 60 events
+2025-03-20 14:25:41,379 - SpotifyEventScraper - INFO - Scraping Variety for Spotify news...
+2025-03-20 14:25:41,411 - SpotifyEventScraper - INFO - No more articles found on Variety page 1, stopping
+2025-03-20 14:25:41,411 - SpotifyEventScraper - INFO - Found 0 events from Variety
+2025-03-20 14:25:41,411 - SpotifyEventScraper - WARNING - No events to save for variety
+2025-03-20 14:25:41,411 - SpotifyEventScraper - WARNING - No events to save
+2025-03-20 14:25:41,411 - SpotifyEventScraper - WARNING - No events to analyze
+2025-03-20 14:32:16,989 - SpotifyEventScraper - INFO - Scraping Variety via API...
+2025-03-20 14:32:16,989 - SpotifyEventScraper - INFO - Fetching Variety API results for page 1
+2025-03-20 14:32:17,810 - SpotifyEventScraper - ERROR - API request failed with status code 404
+2025-03-20 14:32:20,755 - SpotifyEventScraper - ERROR - Invalid or empty API response
+2025-03-20 14:32:20,755 - SpotifyEventScraper - INFO - Found 0 events from Variety API
+2025-03-20 14:32:20,756 - SpotifyEventScraper - WARNING - No events to save for variety_api
+2025-03-20 14:32:20,757 - SpotifyEventScraper - INFO - Scraping Variety for Spotify news...
+2025-03-20 14:32:20,785 - SpotifyEventScraper - INFO - Using cached file for page 1: scraper_cache/variety_spotify_page_1.html
+2025-03-20 14:32:20,818 - SpotifyEventScraper - INFO - Analyzing HTML structure of Variety page 1
+2025-03-20 14:32:20,821 - SpotifyEventScraper - INFO - Searching for 'div.result' found 0 elements
+2025-03-20 14:32:20,821 - SpotifyEventScraper - INFO - Trying alternative selectors...
+2025-03-20 14:32:20,822 - SpotifyEventScraper - INFO - Found 0 result-title elements
+2025-03-20 14:32:20,822 - SpotifyEventScraper - INFO - Found 0 result blocks through title elements
+2025-03-20 14:32:20,822 - SpotifyEventScraper - WARNING - No articles found on Variety page 1 after multiple attempts
+2025-03-20 14:32:20,822 - SpotifyEventScraper - INFO - Found 0 events from Variety
+2025-03-20 14:32:20,822 - SpotifyEventScraper - WARNING - No events to save for variety
+2025-03-20 14:32:20,822 - SpotifyEventScraper - WARNING - No events to save
+2025-03-20 14:32:20,822 - SpotifyEventScraper - WARNING - No events to analyze
+2025-03-20 14:32:56,230 - SpotifyEventScraper - INFO - Scraping Variety via API...
+2025-03-20 14:32:56,230 - SpotifyEventScraper - INFO - Fetching Variety API results for page 1
+2025-03-20 14:32:56,412 - SpotifyEventScraper - ERROR - API request failed with status code 404
+2025-03-20 14:33:00,113 - SpotifyEventScraper - ERROR - Invalid or empty API response
+2025-03-20 14:33:00,113 - SpotifyEventScraper - INFO - Found 0 events from Variety API
+2025-03-20 14:33:00,114 - SpotifyEventScraper - WARNING - No events to save for variety_api
+2025-03-20 14:33:00,115 - SpotifyEventScraper - INFO - Scraping Variety for Spotify news...
+2025-03-20 14:33:00,141 - SpotifyEventScraper - INFO - Using cached file for page 1: scraper_cache/variety_spotify_page_1.html
+2025-03-20 14:33:00,176 - SpotifyEventScraper - INFO - Analyzing HTML structure of Variety page 1
+2025-03-20 14:33:00,178 - SpotifyEventScraper - INFO - Searching for 'div.result' found 0 elements
+2025-03-20 14:33:00,178 - SpotifyEventScraper - INFO - Trying alternative selectors...
+2025-03-20 14:33:00,179 - SpotifyEventScraper - INFO - Found 0 result-title elements
+2025-03-20 14:33:00,179 - SpotifyEventScraper - INFO - Found 0 result blocks through title elements
+2025-03-20 14:33:00,179 - SpotifyEventScraper - WARNING - No articles found on Variety page 1 after multiple attempts
+2025-03-20 14:33:00,179 - SpotifyEventScraper - INFO - Found 0 events from Variety
+2025-03-20 14:33:00,179 - SpotifyEventScraper - WARNING - No events to save for variety
+2025-03-20 14:33:00,180 - SpotifyEventScraper - WARNING - No events to save
+2025-03-20 14:33:00,180 - SpotifyEventScraper - WARNING - No events to analyze
