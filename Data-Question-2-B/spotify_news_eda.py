@@ -19,10 +19,10 @@ sns.set(font_scale=1.2)
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Input directory containing CSV files
-data_dir = os.path.join("/Users/armandocriscuolo/c2025/data_science_project_2025/code/Data-Science-Project/Data-Question-2-B/spotify_news_2024_2025")
+data_dir = os.path.join("/Users/armandocriscuolo/c2025/data_science_project_2025/code/Data-Science-Project/Data-Question-2-B/spotify_news_2024_2025_finnhub")
 
 # Output directory for analysis results
-output_dir = os.path.join(script_dir, "spotify_news_analysis_results")
+output_dir = os.path.join(script_dir, "spotify_news_analysis_results_finnhub")
 
 # Create output directory if it doesn't exist
 def create_output_directory():

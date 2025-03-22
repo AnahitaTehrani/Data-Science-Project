@@ -19,7 +19,7 @@ symbol = "SPOT"  # Spotify stock symbol
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Create output directory for the CSV files
-output_dir = os.path.join(script_dir, "spotify_news_2024_2025")
+output_dir = os.path.join(script_dir, "spotify_news_2024_2025_finnhub")
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
