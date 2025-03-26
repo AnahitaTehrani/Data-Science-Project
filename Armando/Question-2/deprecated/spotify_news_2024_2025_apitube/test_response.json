@@ -1,0 +1,21 @@
+{
+  "status": "ok",
+  "limit": 5,
+  "path": "https://api.apitube.io/v1/news/everything?q=Spotify&published_at.start=2024-01-01&published_at.end=2024-01-31&language=en&sort_by=published_at&sort_order=desc&per_page=5&page=1&api_key=api_live_wQnEu8rpDMAJzbQk3pQHCQt8xeUEqEzGyUAjNNJVqF3vZe",
+  "page": 1,
+  "has_next_pages": false,
+  "next_page": "",
+  "next_page_cursor": "*",
+  "has_previous_page": false,
+  "previous_page": "",
+  "export": {
+    "json": "https://api.apitube.io/v1/news/everything?api_key=api_live_wQnEu8rpDMAJzbQk3pQHCQt8xeUEqEzGyUAjNNJVqF3vZe&export=json&language=en&page=1&per_page=5&published_at.end=2024-01-31&published_at.start=2024-01-01&q=Spotify&sort_by=published_at&sort_order=desc",
+    "xlsx": "https://api.apitube.io/v1/news/everything?api_key=api_live_wQnEu8rpDMAJzbQk3pQHCQt8xeUEqEzGyUAjNNJVqF3vZe&export=xlsx&language=en&page=1&per_page=5&published_at.end=2024-01-31&published_at.start=2024-01-01&q=Spotify&sort_by=published_at&sort_order=desc",
+    "csv": "https://api.apitube.io/v1/news/everything?api_key=api_live_wQnEu8rpDMAJzbQk3pQHCQt8xeUEqEzGyUAjNNJVqF3vZe&export=csv&language=en&page=1&per_page=5&published_at.end=2024-01-31&published_at.start=2024-01-01&q=Spotify&sort_by=published_at&sort_order=desc",
+    "tsv": "https://api.apitube.io/v1/news/everything?api_key=api_live_wQnEu8rpDMAJzbQk3pQHCQt8xeUEqEzGyUAjNNJVqF3vZe&export=tsv&language=en&page=1&per_page=5&published_at.end=2024-01-31&published_at.start=2024-01-01&q=Spotify&sort_by=published_at&sort_order=desc",
+    "xml": "https://api.apitube.io/v1/news/everything?api_key=api_live_wQnEu8rpDMAJzbQk3pQHCQt8xeUEqEzGyUAjNNJVqF3vZe&export=xml&language=en&page=1&per_page=5&published_at.end=2024-01-31&published_at.start=2024-01-01&q=Spotify&sort_by=published_at&sort_order=desc"
+  },
+  "request_id": "2a6a54bb-9133-4f7e-9abf-4929b6583a21",
+  "results": [],
+  "user_input": null
+}

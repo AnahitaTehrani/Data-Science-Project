@@ -1,18 +1,18 @@
-/* Main styling for the dashboard - Spotify Growth Theme */
+/* Main styling for the dashboard - Spotify Light Theme */
 body {
     font-family: 'Circular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #121212;
-    color: #FFFFFF;
+    background-color: #F5F5F5;
+    color: #191414;
 }
 
 /* Header styling */
 .header {
-    background-color: #191414;
-    color: white;
+    background-color: #FFFFFF;
+    color: #191414;
     padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-bottom: 2px solid #1DB954;
 }
 
@@ -31,18 +31,19 @@ body {
 }
 
 .nav-link {
-    color: white;
+    color: #1DB954;
     padding: 0.5rem 1rem;
     text-decoration: none;
     margin-right: 1rem;
     margin-bottom: 0.5rem;
     border-radius: 24px;
-    background-color: rgba(29, 185, 84, 0.2);
+    background-color: rgba(29, 185, 84, 0.1);
     transition: background-color 0.2s, transform 0.2s;
 }
 
 .nav-link:hover {
     background-color: #1DB954;
+    color: #FFFFFF;
     transform: scale(1.05);
 }
 
@@ -55,20 +56,29 @@ body {
 
 /* Home page styling */
 .home-overview {
-    background-color: #282828;
+    background-color: #FFFFFF;
     padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     margin-top: 2rem;
     border-left: 4px solid #1DB954;
 }
 
+.home-overview a {
+    color: #1A73E8;
+    text-decoration: none;
+}
+
+.home-overview a:hover {
+    text-decoration: underline;
+}
+
 /* Visualization container */
 .viz-container {
-    background-color: #282828;
+    background-color: #FFFFFF;
     padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     margin-top: 1.5rem;
     border-left: 4px solid #1DB954;
 }
@@ -76,27 +86,27 @@ body {
 /* Dropdown styling */
 .dash-dropdown {
     margin-bottom: 1rem;
-    background-color: #333333;
+    background-color: #FFFFFF;
     border-radius: 4px;
-    color: white;
+    color: #191414;
 }
 
 .dash-dropdown .Select-control {
-    background-color: #333333;
+    background-color: #FFFFFF;
     border-color: #1DB954;
 }
 
 .dash-dropdown .Select-menu-outer {
-    background-color: #333333;
+    background-color: #FFFFFF;
 }
 
 .dash-dropdown .Select-value-label {
-    color: white !important;
+    color: #191414 !important;
 }
 
 /* Growth indicators and economic metrics styling */
 .metric-card {
-    background-color: #333333;
+    background-color: #FFFFFF;
     border-left: 4px solid #1DB954;
     padding: 1rem;
     margin-bottom: 1rem;
@@ -119,7 +129,7 @@ body {
 
 /* Chart customization */
 .js-plotly-plot .plotly .main-svg {
-    background-color: #282828 !important;
+    background-color: #FFFFFF !important;
 }
 
 /* Responsive adjustments */

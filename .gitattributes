@@ -1,0 +1,5 @@
+# Ensure CSV files are stored normally in Git
+*.csv -filter -diff -merge -text
+
+# Default settings for other file types
+* text=auto
