@@ -4,8 +4,15 @@ from dash import dcc, html
 from dash.dependencies import Input, Output
 import plotly.express as px
 import pandas as pd
-from visualizations.q1_visualization import create_user_growth_visualization
-# Import other visualization functions as needed
+from visualizations.q1_visualization import * # change to the correct visualization functions
+from visualizations.q2_visualization import * # change to the correct visualization functions
+from visualizations.q3_visualization import * # change to the correct visualization functions
+from visualizations.q4_visualization import * # change to the correct visualization functions
+from visualizations.q5_visualization import * # change to the correct visualization functions
+from visualizations.q6_visualization import * # change to the correct visualization functions
+from visualizations.q7_visualization import * # change to the correct visualization functions
+from visualizations.q8_visualization import * # change to the correct visualization functions
+
 
 # Initialize the Dash app
 app = dash.Dash(__name__, 
