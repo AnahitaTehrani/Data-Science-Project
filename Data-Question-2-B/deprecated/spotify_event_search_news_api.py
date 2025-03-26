@@ -11,7 +11,7 @@ from newsapi import NewsApiClient
 from datetime import datetime, timedelta
 
 # Initialize client
-newsapi = NewsApiClient(api_key='b28ab6db6fbe4dc98543806f04d24e3f')
+newsapi = NewsApiClient(api_key='')
 
 # Define a 30-day period in 2025
 end_date = '2025-03-19'  # 

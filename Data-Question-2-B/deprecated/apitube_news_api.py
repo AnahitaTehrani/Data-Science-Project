@@ -7,7 +7,7 @@ import datetime
 url = "https://api.apitube.io/v1/news/everything"
 
 querystring = {"per_page":"1",
-               "api_key":"api_live_wQnEu8rpDMAJzbQk3pQHCQt8xeUEqEzGyUAjNNJVqF3vZe",
+               "api_key":"",
                "title":"Spotify",
                "body":"Spotify",
                "language":"en",

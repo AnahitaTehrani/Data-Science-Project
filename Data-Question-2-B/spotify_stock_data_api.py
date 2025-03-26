@@ -12,7 +12,7 @@ if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
 # API configuration
-API_KEY = "cd72ff0b5ead5fbeb7ff86ac4140e2e8"
+API_KEY = ""
 BASE_URL = "http://api.marketstack.com/v1/eod"
 SYMBOL = "SPOT"  # Spotify stock symbol
 DATE_FROM = "2024-03-01"

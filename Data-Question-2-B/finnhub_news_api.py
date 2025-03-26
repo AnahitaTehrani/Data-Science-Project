@@ -3,7 +3,7 @@ import pandas as pd
 import os
 import datetime
 
-api_key = 'cvfaea9r01qjugsh0hogcvfaea9r01qjugsh0hp0'
+api_key = ''
 
 # If no API key is found, prompt the user
 if not api_key:
