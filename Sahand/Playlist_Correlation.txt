@@ -1,0 +1,2 @@
+Correlation Between Playlist Frequency and Total Followers
+This scatter plot illustrates a clear positive correlation: tracks that appear in more playlists tend to reach a higher total number of followers.
