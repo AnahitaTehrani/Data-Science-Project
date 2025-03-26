@@ -1,0 +1,122 @@
+{
+  "status": "ok",
+  "limit": 5,
+  "path": "https://api.apitube.io/v1/news/everything?per_page=5&api_key=api_live_wQnEu8rpDMAJzbQk3pQHCQt8xeUEqEzGyUAjNNJVqF3vZe",
+  "page": 1,
+  "has_next_pages": true,
+  "next_page": "https://api.apitube.io/v1/news/everything?api_key=api_live_wQnEu8rpDMAJzbQk3pQHCQt8xeUEqEzGyUAjNNJVqF3vZe&page=2&per_page=5",
+  "next_page_cursor": "AoIqMzAyNTE2NjI2MHDy6pPglQM=",
+  "has_previous_page": false,
+  "previous_page": "",
+  "export": {
+    "json": "https://api.apitube.io/v1/news/everything?api_key=api_live_wQnEu8rpDMAJzbQk3pQHCQt8xeUEqEzGyUAjNNJVqF3vZe&export=json&per_page=5",
+    "xlsx": "https://api.apitube.io/v1/news/everything?api_key=api_live_wQnEu8rpDMAJzbQk3pQHCQt8xeUEqEzGyUAjNNJVqF3vZe&export=xlsx&per_page=5",
+    "csv": "https://api.apitube.io/v1/news/everything?api_key=api_live_wQnEu8rpDMAJzbQk3pQHCQt8xeUEqEzGyUAjNNJVqF3vZe&export=csv&per_page=5",
+    "tsv": "https://api.apitube.io/v1/news/everything?api_key=api_live_wQnEu8rpDMAJzbQk3pQHCQt8xeUEqEzGyUAjNNJVqF3vZe&export=tsv&per_page=5",
+    "xml": "https://api.apitube.io/v1/news/everything?api_key=api_live_wQnEu8rpDMAJzbQk3pQHCQt8xeUEqEzGyUAjNNJVqF3vZe&export=xml&per_page=5"
+  },
+  "request_id": "ba9ac8d1-afdf-4487-8af1-dae80aae6a48",
+  "results": [
+    {
+      "id": 3025166260,
+      "href": "https://ww...[+95 chars]...[Upgrade subscription plan]",
+      "published_at": "2025-03-23T00:03:00Z",
+      "title": "Hennie Kuiper: \u201cHet vuur in Mathieu van der Poel is ongekend sterk wapen\u201d...[Upgrade subscription plan]",
+      "description": "Mathieu van der Poel is de eerste Nederlander die erin is geslaagd om Milaan-San Remo voor een tweede keer te winnen. Arie den Hartog (1965), Jan Raas (1977) en Hennie Kuiper (1985) wisten de openings...[+98 chars]...[Upgrade subscription plan]",
+      "body": "Hennie Kuiper: \u201cHet vuur in Mathieu van der Poel is ongekend sterk wapen\u201d | WielerFlits Materiaalzone Fietstoerisme Deelnemers Nokere Koerse 2025 Cyclingflash. com RIDE Magazine WielerFlits Nieuws Voo...[+6796 chars]...[Upgrade subscription plan]",
+      "author": {
+        "id": "a5465a7669e8ad16198b2f7ca0240131",
+        "name": "JulianDubbeld"
+      },
+      "image": "https://www.wielerflits.be/wp-content/uploads/2025/03/CORVOS_00037745-314-e1742665980500-150x72.jpg",
+      "categories": null,
+      "industries": null,
+      "entities": null,
+      "topics": null,
+      "language": "af",
+      "source": {
+        "id": 9838,
+        "domain": "wielerfl...[+6 chars]...[Upgrade subscription plan]",
+        "home_page_url": "https://...[+18 chars]...[Upgrade subscription plan]",
+        "type": "news",
+        "rankings": {
+          "opr": 5
+        },
+        "location": {
+          "country_name": "Belgium",
+          "country_code": "be"
+        },
+        "favicon": "https://www.google.com/s2/favicons?domain=https://...[+18 chars]...[Upgrade subscription plan]"
+      },
+      "sentiment": {
+        "overall": {
+          "score": 0,
+          "polarity": "neutral"
+        },
+        "title": {
+          "score": 0,
+          "polarity": "neutral"
+        },
+        "body": {
+          "score": 0,
+          "polarity": "positive"
+        }
+      },
+      "summary": [
+        {
+          "sentence": "Hennie Kuiper: \u201cHet vuur in Mathieu van der Poel is ongekend sterk wapen\u201d | WielerFlits Materiaalzone Fietstoerisme Deelnemers Nokere Koerse 2025 Cyclingflash.",
+          "sentiment": {
+            "score": 0,
+            "polarity": "neutral"
+          }
+        },
+        {
+          "sentence": "com RIDE Magazine WielerFlits Nieuws Voorbeschouwingen Deelnemerslijsten Kalender Interviews TV Gids Materiaalzone Fietstoerisme | Ticker Nieuws Voorbeschouwingen Deelnemerslijsten Kalender Interviews Materiaalzone Fietstoerisme Deelnemers Nokere Koerse 2025 Cyclingflash.",
+          "sentiment": {
+            "score": 0,
+            "polarity": "neutral"
+          }
+        },
+        {
+          "sentence": "Hij is sowieso altijd een hele slim renner geweest, maar je merkt nu aan alles dat hij volledig in balans is.",
+          "sentiment": {
+            "score": -0.05,
+            "polarity": "negative"
+          }
+        },
+        {
+          "sentence": "Zoals hij het zelf al zei: Hij heeft al bijna alles gewonnen en ziet de extra grote overwinningen puur als bonus.",
+          "sentiment": {
+            "score": -0.1,
+            "polarity": "negative"
+          }
+        },
+        {
+          "sentence": "\u201d 07:41 Lees ook Mathieu van der Poel overklast Tadej Pogacar met actie vol bravoure 07:41 Welke actie sprak je het meest aan?",
+          "sentiment": {
+            "score": 0,
+            "polarity": "neutral"
+          }
+        }
+      ],
+      "keywords": [
+        "Het",
+        "Mathieu",
+        "Poel"
+      ],
+      "links": null,
+      "media": null,
+      "story": {
+        "id": 3025166260,
+        "uri": "https://api.apitube.io/v1/news/story/3025166260"
+      },
+      "is_duplicate": false,
+      "is_paywall": false,
+      "sentences_count": 84,
+      "paragraphs_count": 1088,
+      "words_count": 1193,
+      "characters_count": 6996
+    }
+     ],
+  "user_input": null
+}
