@@ -48,7 +48,7 @@ app.layout = html.Div([
     
     # Header with navigation
     html.Div([
-        html.H1("Spotify Insights: User Behavior, Media Influence, and Market Dynamics", className='header-title'),
+        html.H1("Spotify’s User Base: Stats, Growth & Trends", className='header-title'),
         html.Div([
             dcc.Link('Home', href='/', className='nav-link'),
             dcc.Link('User Growth', href='/question1', className='nav-link'),
