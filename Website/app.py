@@ -11,6 +11,69 @@ from visualizations.q5_visualization import create_age_demographics_visualizatio
 from visualizations.q1_visualization import create_user_growth_visualization
 from visualizations.q3_visualization import render_question3, update_map
 from visualizations.q6_visualization import render_question6
+from visualizations.q7_visualization import create_price_impact_visualization
+from visualizations.q8_visualization import create_track_popularity_visualization
+
+# Add these functions to load the CSV files more cleanly
+def load_price_data():
+    """Load the price change data."""
+    try:
+        price_csv_path = os.path.join('data', 'Price change Spotify.csv')
+        # First try with comma delimiter
+        try:
+            df = pd.read_csv(price_csv_path, encoding="utf-8")
+        except:
+            # If that fails, try with semicolon delimiter
+            df = pd.read_csv(price_csv_path, sep=";", encoding="utf-8")
+        return df
+    except Exception as e:
+        print(f"Error loading price data: {e}")
+        return pd.DataFrame()  # Return empty DataFrame on error
+
+def load_premium_data():
+    """Load the premium user data."""
+    try:
+        premium_csv_path = os.path.join('data', 'Spotify premium user.csv')
+        # First try with comma delimiter
+        try:
+            df = pd.read_csv(premium_csv_path, encoding="utf-8")
+        except:
+            # If that fails, try with semicolon delimiter
+            df = pd.read_csv(premium_csv_path, sep=";", encoding="utf-8")
+        return df
+    except Exception as e:
+        print(f"Error loading premium user data: {e}")
+        return pd.DataFrame()  # Return empty DataFrame on error
+
+def load_tracks_data():
+    """Load the tracks and playlists data."""
+    tracks_df = pd.DataFrame()
+    playlists_df = pd.DataFrame()
+    
+    try:
+        # Function to load CSV with either delimiter
+        def load_csv_with_fallback(file_path):
+            try:
+                # Try comma first
+                df = pd.read_csv(file_path, encoding="utf-8")
+                if len(df.columns) <= 1:  # If only one column, try semicolon
+                    df = pd.read_csv(file_path, sep=";", encoding="utf-8")
+                return df
+            except Exception as e:
+                print(f"Error loading {file_path}: {e}")
+                return pd.DataFrame()
+        
+        tracks_csv_path = os.path.join('data', 'playlist_tracks_cleaned.csv')
+        playlists_csv_path = os.path.join('data', 'spotify_top_playlists.csv')
+        
+        tracks_df = load_csv_with_fallback(tracks_csv_path)
+        playlists_df = load_csv_with_fallback(playlists_csv_path)
+    except Exception as e:
+        print(f"Error in load_tracks_data: {e}")
+    
+    return tracks_df, playlists_df
+
+
 
 app = dash.Dash(__name__, 
                 suppress_callback_exceptions=True,
@@ -215,8 +278,6 @@ def get_research_question_layout(question_number):
                 html.P(f"Error loading visualization: {str(e)}", style={'color': 'red'})
         ])
     # Modifications to app.py to integrate Research Questions 4 and 5
-
-    # In the get_research_question_layout function, add these blocks for question_number 4 and 5:
 
     # For Question 4 (Free vs Premium Users):
     elif question_number == 4:
@@ -439,21 +500,103 @@ def get_research_question_layout(question_number):
                 html.P(descriptions[question_number]),
                 html.P(f"Error loading visualization: {str(e)}", style={'color': 'red'})
             ])
-    else:
-        # Generic template for other questions (can be expanded later)
-        return html.Div([
-            html.H2(f"Research Question {question_number}"),
-            html.P(questions[question_number], className="research-question"),
-            html.P(descriptions[question_number]),
-            html.P("This visualization is coming soon.")
-        ])
 
+    elif question_number == 7:
+        try:
+            return html.Div([
+                html.H2(f"Research Question {question_number}"),
+                html.P(questions[question_number], className="research-question"),
+                html.P(descriptions[question_number]),
+                
+                # Add dropdown for visualization selection
+                html.Div([
+                    html.Label("Select Visualization:"),
+                    dcc.Dropdown(
+                        id='dropdown-q7',
+                        options=[
+                            {'label': 'Price vs Premium Users Correlation', 'value': 'scatter'},
+                            {'label': 'Price & Users Over Time', 'value': 'timeseries'}
+                        ],
+                        value='timeseries',
+                        clearable=False
+                    )
+                ], className='dropdown-container'),
+                
+                # Visualization container
+                html.Div([
+                    dcc.Graph(id='graph-q7')
+                ], className='viz-container'),
+                
+                # Explanation section
+                html.Div([
+                    html.H4("Price Impact Analysis"),
+                    html.P([
+                        "The visualization explores how Spotify's price changes have affected its premium subscriber growth from 2015 to 2025.",
+                        html.Br(),
+                        html.Br(),
+                        "Key findings:",
+                        html.Ul([
+                            html.Li("Despite two moderate price increases starting in 2023, Spotify has maintained steady growth in premium subscribers."),
+                            html.Li("The correlation between price and premium users is positive, suggesting that Spotify's value proposition remains strong even at higher price points."),
+                            html.Li("The time series shows that premium subscribers continued to increase even after price changes, indicating good price elasticity."),
+                        ]),
+                        html.Br(),
+                        "The data demonstrates Spotify's ability to balance monetization with subscriber retention and growth."
+                    ]),
+                ], className='viz-text')
+            ])
+        except Exception as e:
+            return html.Div([
+                html.H2(f"Research Question {question_number}"),
+                html.P(questions[question_number], className="research-question"),
+                html.P(descriptions[question_number]),
+                html.P(f"Error loading visualization: {str(e)}", style={'color': 'red'})
+            ])
+        
+    elif question_number == 8:
+        try:
+            return html.Div([
+                html.H2(f"Research Question {question_number}"),
+                html.P(questions[question_number], className="research-question"),
+                html.P(descriptions[question_number]),
+                
+                # Visualization container
+                html.Div([
+                    dcc.Graph(id='graph-q8')
+                ], className='viz-container'),
+                
+                # Explanation section
+                html.Div([
+                    html.H4("Track Popularity Analysis"),
+                    html.P([
+                        "This analysis examines whether popular tracks tend to appear more frequently in playlists.",
+                        html.Br(),
+                        html.Br(),
+                        "Key findings:",
+                        html.Ul([
+                            html.Li("There is a clear positive correlation between the number of playlists a track appears in and the total followers of those playlists."),
+                            html.Li("Tracks that appear in more playlists tend to reach a significantly higher total number of followers."),
+                            html.Li("The scatter plot demonstrates a 'rich get richer' phenomenon where increased playlist inclusion correlates with exponentially higher audience reach."),
+                        ]),
+                        html.Br(),
+                        "This correlation highlights the importance of playlist inclusion for artists looking to expand their audience on Spotify."
+                    ]),
+                ], className='viz-text')
+            ])
+        except Exception as e:
+            return html.Div([
+                html.H2(f"Research Question {question_number}"),
+                html.P(questions[question_number], className="research-question"),
+                html.P(descriptions[question_number]),
+                html.P(f"Error loading visualization: {str(e)}", style={'color': 'red'})
+            ])
+            
 # Imprint page layout
 def get_imprint_layout():
     return html.Div([
         html.H2("Imprint"),
-        html.P("Your Name or University Name"),
-        html.P("Contact Information: your.email@example.com"),
+        html.P("Armando Criscuolo"),
+        html.P("stu231434uni@uni-kiel.de"),
     ])
 
 # Update the callback for URL routing to include Questions 3 and 6
@@ -617,6 +760,61 @@ def update_graph_q5(selected_demographic):
 )
 def update_map_visualization(selected_year):
     return update_map(selected_year)
+
+@app.callback(
+    Output('graph-q7', 'figure'),
+    [Input('dropdown-q7', 'value')]
+)
+def update_graph_q7(selected_viz):
+    try:
+        # Load the data
+        price_df = load_price_data()
+        premium_df = load_premium_data()
+        
+        if price_df.empty or premium_df.empty:
+            raise Exception("Failed to load data files")
+            
+        # Create the visualization using the function from q7_visualization.py
+        fig = create_price_impact_visualization(price_df, premium_df, selected_viz)
+        return fig
+    except Exception as e:
+        # Return an empty figure with error message
+        return {
+            'data': [],
+            'layout': {
+                'title': f"Error loading visualization: {str(e)}",
+                'height': 500
+            }
+        }
+
+# Callback for research question 8 - Track popularity visualization
+@app.callback(
+    Output('graph-q8', 'figure'),
+    [Input('url', 'pathname')]  # Using URL as a trigger so the graph loads when page is visited
+)
+def update_graph_q8(pathname):
+    if pathname != '/question8':
+        raise dash.exceptions.PreventUpdate
+        
+    try:
+        # Load the data
+        tracks_df, playlists_df = load_tracks_data()
+        
+        if tracks_df.empty or playlists_df.empty:
+            raise Exception("Failed to load data files")
+            
+        # Create the visualization using the function from q8_visualization.py
+        fig = create_track_popularity_visualization(tracks_df, playlists_df)
+        return fig
+    except Exception as e:
+        # Return an empty figure with error message
+        return {
+            'data': [],
+            'layout': {
+                'title': f"Error loading visualization: {str(e)}",
+                'height': 500
+            }
+        }
 
 # Run the app
 if __name__ == '__main__':
