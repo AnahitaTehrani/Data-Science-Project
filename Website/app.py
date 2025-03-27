@@ -4,15 +4,10 @@ from dash import dcc, html
 from dash.dependencies import Input, Output
 import plotly.express as px
 import pandas as pd
-from visualizations.q1_visualization import * # change to the correct visualization functions
-from visualizations.q2_visualization import * # change to the correct visualization functions
-from visualizations.q3_visualization import * # change to the correct visualization functions
-from visualizations.q4_visualization import * # change to the correct visualization functions
-from visualizations.q5_visualization import * # change to the correct visualization functions
-from visualizations.q6_visualization import * # change to the correct visualization functions
-from visualizations.q7_visualization import * # change to the correct visualization functions
-from visualizations.q8_visualization import * # change to the correct visualization functions
+import os
 
+# Import the visualization function directly
+from visualizations.q1_visualization import create_user_growth_visualization
 
 # Initialize the Dash app
 app = dash.Dash(__name__, 
@@ -48,15 +43,6 @@ app.layout = html.Div([
     html.Div(id='page-content', className='content')
 ])
 
-# Sample data for demo visualizations
-def get_sample_data():
-    # This function returns sample data that will be replaced with your actual data
-    return pd.DataFrame({
-        'Category': ['A', 'B', 'C', 'D', 'E', 'F'],
-        'Values': [4, 7, 2, 5, 9, 3],
-        'Year': [2019, 2020, 2021, 2019, 2020, 2021]
-    })
-
 # Home page layout
 def get_home_layout():
     return html.Div([
@@ -87,7 +73,7 @@ def get_home_layout():
         ], className='home-overview')
     ])
 
-# Template for a research question page
+# Template for a research question page (specifically for Question 1 initially)
 def get_research_question_layout(question_number):
     questions = {
         1: "How many users worldwide use Spotify monthly, and how has this number changed over time?",
@@ -100,7 +86,6 @@ def get_research_question_layout(question_number):
         8: "Is there a tendency for popular tracks (Track Table) to appear more frequently in playlists (Playlist-Track Table)?"
     }
     
-    # needs to be updated once visualizations are added
     descriptions = {
         1: "This visualization tracks Spotify's monthly active users (MAU) worldwide over time, showing how the platform has grown since its launch.",
         2: "This analysis examines the correlation between media sentiment in news articles about Spotify and the company's stock performance.",
@@ -112,16 +97,52 @@ def get_research_question_layout(question_number):
         8: "This visualization explores whether popular tracks tend to appear more frequently in user-created playlists."
     }
     
-    return html.Div([
-        html.H2(f"Research Question {question_number}"),
-        html.P(questions[question_number], className="metric-value"),
-        html.P(descriptions[question_number]),
-        
-        # Example of an interactive visualization with dropdown
-        html.Div([
-            dcc.Graph(id=f'graph-q{question_number}')
-        ], className='viz-container')
-    ])
+    if question_number == 1:
+        # Special handling for Question 1 to get it working first
+        try:
+            csv_path = 'Armando/Question-1/spotify_users.csv'
+            df = pd.read_csv(csv_path)
+            
+            # Get unique years for the dropdown
+            years = sorted(df['Year'].unique())
+            
+            return html.Div([
+                html.H2(f"Research Question {question_number}"),
+                html.P(questions[question_number], className="research-question"),
+                html.P(descriptions[question_number]),
+                
+                # Add the dropdown
+                html.Div([
+                    html.Label("Select Year:"),
+                    dcc.Dropdown(
+                        id='dropdown-q1',
+                        options=[{'label': 'All Years', 'value': 'all'}] + 
+                                [{'label': str(year), 'value': year} for year in years],
+                        value='all',
+                        clearable=False
+                    )
+                ], className='dropdown-container'),
+                
+                # Visualization container
+                html.Div([
+                    dcc.Graph(id='graph-q1', figure=create_user_growth_visualization(df, selected_year='all'))
+                ], className='viz-container')
+            ])
+        except Exception as e:
+            return html.Div([
+                html.H2(f"Research Question {question_number}"),
+                html.P(questions[question_number], className="research-question"),
+                html.P(descriptions[question_number]),
+                html.P(f"Error loading visualization: {str(e)}", style={'color': 'red'})
+            ])
+    else:
+        # Generic template for other questions (can be expanded later)
+        return html.Div([
+            html.H2(f"Research Question {question_number}"),
+            html.P(questions[question_number], className="research-question"),
+            html.P(descriptions[question_number]),
+            html.P("This visualization is coming soon.")
+        ])
 
 # Imprint page layout
 def get_imprint_layout():
@@ -129,7 +150,6 @@ def get_imprint_layout():
         html.H2("Imprint"),
         html.P("Your Name or University Name"),
         html.P("Contact Information: your.email@example.com"),
-        # Add more details as needed
     ])
 
 # Callback to update page content based on URL
@@ -161,280 +181,36 @@ def display_page(pathname):
     else:
         return get_home_layout()  # Default to home page
 
-# Light mode theme colors for visualizations
+# Define Spotify brand colors
 spotify_green = '#1DB954'
 light_bg = '#FFFFFF'
 dark_text = '#191414'
 spotify_colors = ['#1DB954', '#1A73E8', '#191414', '#535353', '#B3B3B3']
 
-# Callback for research question 1 - Line chart for user growth over time
+# Callback for research question 1 - User growth visualization
 @app.callback(
     Output('graph-q1', 'figure'),
     [Input('dropdown-q1', 'value')]
 )
 def update_graph_q1(selected_year):
-    # Load your actual data here
-    # df = pd.read_csv('path_to_your_data.csv')
-    
-    # For now, using sample data
-    df = get_sample_data()
-    
-    # Use your visualization function
-    return create_user_growth_visualization(df, selected_year)
-
-# Callback for research question 2 - Scatter plot for sentiment vs stock performance
-@app.callback(
-    Output('graph-q2', 'figure'),
-    [Input('dropdown-q2', 'value')]
-)
-def update_graph_q2(selected_year):
-    # Get sample data (to be replaced with actual data)
-    df = get_sample_data()
-    
-    # Filter data based on dropdown selection
-    if selected_year != 'all':
-        filtered_df = df[df['Year'] == selected_year]
-    else:
-        filtered_df = df
-    
-    # Create a scatter plot for sentiment vs stock performance
-    fig = px.scatter(
-        filtered_df, 
-        x='Category', 
-        y='Values',
-        size='Values',
-        title=f'Media Sentiment vs Stock Performance ({selected_year if selected_year != "all" else "All Years"})',
-        color='Values',
-        color_continuous_scale=['#B3B3B3', '#1DB954']  # Light gray to Spotify green
-    )
-    
-    fig.update_layout(
-        xaxis_title="Sentiment Score",
-        yaxis_title="Stock Price ($)",
-        plot_bgcolor=light_bg,
-        paper_bgcolor=light_bg,
-        font_color=dark_text
-    )
-    
-    return fig
-
-# Callback for research question 3 - Bar chart for regional streaming activity
-@app.callback(
-    Output('graph-q3', 'figure'),
-    [Input('dropdown-q3', 'value')]
-)
-def update_graph_q3(selected_year):
-    # Get sample data (to be replaced with actual data)
-    df = get_sample_data()
-    
-    # Filter data based on dropdown selection
-    if selected_year != 'all':
-        filtered_df = df[df['Year'] == selected_year]
-    else:
-        filtered_df = df
-    
-    # Create a bar chart for regional streaming activity
-    fig = px.bar(
-        filtered_df, 
-        x='Category', 
-        y='Values',
-        title=f'Regional Streaming Activity ({selected_year if selected_year != "all" else "All Years"})',
-        color_discrete_sequence=spotify_colors
-    )
-    
-    fig.update_layout(
-        xaxis_title="Region",
-        yaxis_title="Streaming Hours (millions)",
-        plot_bgcolor=light_bg,
-        paper_bgcolor=light_bg,
-        font_color=dark_text
-    )
-    
-    return fig
-
-# Callback for research question 4 - Pie chart for free vs premium users
-@app.callback(
-    Output('graph-q4', 'figure'),
-    [Input('dropdown-q4', 'value')]
-)
-def update_graph_q4(selected_year):
-    # Get sample data (to be replaced with actual data)
-    df = get_sample_data()
-    
-    # Filter data based on dropdown selection
-    if selected_year != 'all':
-        filtered_df = df[df['Year'] == selected_year]
-    else:
-        filtered_df = df
-    
-    # Create a pie chart for free vs premium users
-    fig = px.pie(
-        filtered_df, 
-        values='Values', 
-        names='Category',
-        title=f'Free vs Premium Users and Revenue Impact ({selected_year if selected_year != "all" else "All Years"})',
-        color_discrete_sequence=[spotify_green, '#1A73E8', '#535353', '#B3B3B3']
-    )
-    
-    fig.update_layout(
-        plot_bgcolor=light_bg,
-        paper_bgcolor=light_bg,
-        font_color=dark_text
-    )
-    
-    return fig
-
-# Callback for research question 5 - Bar chart for demographic factors
-@app.callback(
-    Output('graph-q5', 'figure'),
-    [Input('dropdown-q5', 'value')]
-)
-def update_graph_q5(selected_year):
-    # Get sample data (to be replaced with actual data)
-    df = get_sample_data()
-    
-    # Filter data based on dropdown selection
-    if selected_year != 'all':
-        filtered_df = df[df['Year'] == selected_year]
-    else:
-        filtered_df = df
-    
-    # Create a grouped bar chart for demographic breakdown
-    fig = px.bar(
-        filtered_df, 
-        x='Category', 
-        y='Values',
-        title=f'User Demographics ({selected_year if selected_year != "all" else "All Years"})',
-        color_discrete_sequence=spotify_colors,
-        barmode='group'
-    )
-    
-    fig.update_layout(
-        xaxis_title="Age Group",
-        yaxis_title="Number of Users (millions)",
-        plot_bgcolor=light_bg,
-        paper_bgcolor=light_bg,
-        font_color=dark_text
-    )
-    
-    return fig
-
-# Callback for research question 6 - Dual axis chart for chart comparison
-@app.callback(
-    Output('graph-q6', 'figure'),
-    [Input('dropdown-q6', 'value')]
-)
-def update_graph_q6(selected_year):
-    # Get sample data (to be replaced with actual data)
-    df = get_sample_data()
-    
-    # Filter data based on dropdown selection
-    if selected_year != 'all':
-        filtered_df = df[df['Year'] == selected_year]
-    else:
-        filtered_df = df
-    
-    # Create a bar chart for chart comparison (would be replaced with dual-axes)
-    fig = px.bar(
-        filtered_df, 
-        x='Category', 
-        y='Values',
-        title=f'Popular Music Charts vs Spotify Charts ({selected_year if selected_year != "all" else "All Years"})',
-        color='Year',
-        color_discrete_sequence=[spotify_green, '#1A73E8', '#535353']
-    )
-    
-    fig.update_layout(
-        xaxis_title="Track",
-        yaxis_title="Ranking Position",
-        plot_bgcolor=light_bg,
-        paper_bgcolor=light_bg,
-        font_color=dark_text
-    )
-    
-    return fig
-
-# Callback for research question 7 - Line chart for price impact
-@app.callback(
-    Output('graph-q7', 'figure'),
-    [Input('dropdown-q7', 'value')]
-)
-def update_graph_q7(selected_year):
-    # Get sample data (to be replaced with actual data)
-    df = get_sample_data()
-    
-    # Filter data based on dropdown selection
-    if selected_year != 'all':
-        filtered_df = df[df['Year'] == selected_year]
-    else:
-        filtered_df = df
-    
-    # Create a line chart for price impact on growth
-    fig = px.line(
-        filtered_df, 
-        x='Category', 
-        y='Values',
-        title=f'Price Changes and Growth Impact ({selected_year if selected_year != "all" else "All Years"})',
-        markers=True,
-        color_discrete_sequence=[spotify_green]
-    )
-    
-    fig.update_layout(
-        xaxis_title="Date",
-        yaxis_title="Subscription Growth Rate (%)",
-        plot_bgcolor=light_bg,
-        paper_bgcolor=light_bg,
-        font_color=dark_text
-    )
-    
-    # Add annotations for price change events
-    fig.add_annotation(
-        x="C",
-        y=2,
-        text="Price Increase",
-        showarrow=True,
-        arrowhead=1,
-        arrowsize=1,
-        arrowwidth=2,
-        arrowcolor=spotify_green
-    )
-    
-    return fig
-
-# Callback for research question 8 - Scatter plot for track popularity vs playlist frequency
-@app.callback(
-    Output('graph-q8', 'figure'),
-    [Input('dropdown-q8', 'value')]
-)
-def update_graph_q8(selected_year):
-    # Get sample data (to be replaced with actual data)
-    df = get_sample_data()
-    
-    # Filter data based on dropdown selection
-    if selected_year != 'all':
-        filtered_df = df[df['Year'] == selected_year]
-    else:
-        filtered_df = df
-    
-    # Create a scatter plot for track popularity vs playlist frequency
-    fig = px.scatter(
-        filtered_df, 
-        x='Category', 
-        y='Values',
-        size='Values',
-        title=f'Track Popularity vs Playlist Frequency ({selected_year if selected_year != "all" else "All Years"})',
-        color_discrete_sequence=spotify_colors
-    )
-    
-    fig.update_layout(
-        xaxis_title="Track Popularity Score",
-        yaxis_title="Playlist Appearances",
-        plot_bgcolor=light_bg,
-        paper_bgcolor=light_bg,
-        font_color=dark_text
-    )
-    
-    return fig
+    try:
+        # Adjust this path based on where your data is stored
+        csv_path = 'Armando/Question-1/spotify_users.csv'
+        df = pd.read_csv(csv_path)
+        
+        # Create the visualization using the function from q1_visualization.py
+        fig = create_user_growth_visualization(df, selected_year)
+        
+        return fig
+    except Exception as e:
+        # Return an empty figure with error message
+        return {
+            'data': [],
+            'layout': {
+                'title': f"Error loading visualization: {str(e)}",
+                'height': 500
+            }
+        }
 
 # Run the app
 if __name__ == '__main__':

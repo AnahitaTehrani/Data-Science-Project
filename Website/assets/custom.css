@@ -1,0 +1,6 @@
+
+.js-plotly-plot, .plot-container, .svg-container, svg {
+    visibility: visible !important;
+    opacity: 1 !important;
+    display: block !important;
+}
