@@ -9,6 +9,8 @@ from visualizations.q2_visualization import load_and_preprocess_data, create_vis
 from visualizations.q4_visualization import create_revenue_visualization, create_users_comparison_visualization
 from visualizations.q5_visualization import create_age_demographics_visualization, create_gender_demographics_visualization
 from visualizations.q1_visualization import create_user_growth_visualization
+from visualizations.q3_visualization import render_question3, update_map
+from visualizations.q6_visualization import render_question6
 
 app = dash.Dash(__name__, 
                 suppress_callback_exceptions=True,
@@ -479,7 +481,7 @@ def get_imprint_layout():
         html.P("Contact Information: your.email@example.com"),
     ])
 
-# Callback to update page content based on URL
+# Update the callback for URL routing to include Questions 3 and 6
 @app.callback(
     Output('page-content', 'children'),
     [Input('url', 'pathname')]
@@ -492,13 +494,13 @@ def display_page(pathname):
     elif pathname == '/question2':
         return get_research_question_layout(2)
     elif pathname == '/question3':
-        return get_research_question_layout(3)
+        return render_question3()  # Call our new function for Question 3
     elif pathname == '/question4':
         return get_research_question_layout(4)
     elif pathname == '/question5':
         return get_research_question_layout(5)
     elif pathname == '/question6':
-        return get_research_question_layout(6)
+        return render_question6()  # Call our new function for Question 6
     elif pathname == '/question7':
         return get_research_question_layout(7)
     elif pathname == '/question8':
@@ -632,6 +634,14 @@ def update_graph_q5(selected_demographic):
                 'height': 500
             }
         }
+
+# Add callback for the interactive map in Question 3
+@app.callback(
+    Output('map-visualization', 'figure'),
+    [Input('year-dropdown', 'value')]
+)
+def update_map_visualization(selected_year):
+    return update_map(selected_year)
 
 # Run the app
 if __name__ == '__main__':
