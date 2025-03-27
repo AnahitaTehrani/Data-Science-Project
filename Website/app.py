@@ -100,7 +100,7 @@ def get_research_question_layout(question_number):
     if question_number == 1:
         # Special handling for Question 1 to get it working first
         try:
-            csv_path = 'Armando/Question-1/spotify_users.csv'
+            csv_path = 'Website/data/spotify_users.csv'
             df = pd.read_csv(csv_path)
             
             # Get unique years for the dropdown
@@ -195,7 +195,7 @@ spotify_colors = ['#1DB954', '#1A73E8', '#191414', '#535353', '#B3B3B3']
 def update_graph_q1(selected_year):
     try:
         # Adjust this path based on where your data is stored
-        csv_path = 'Armando/Question-1/spotify_users.csv'
+        csv_path = 'Website/data/spotify_users.csv'
         df = pd.read_csv(csv_path)
         
         # Create the visualization using the function from q1_visualization.py
