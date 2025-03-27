@@ -5,6 +5,7 @@ from dash.dependencies import Input, Output
 import plotly.express as px
 import pandas as pd
 import os
+from visualizations.q2_visualization import load_and_preprocess_data, create_visualization
 
 # Import the visualization function directly
 from visualizations.q1_visualization import create_user_growth_visualization
@@ -135,6 +136,86 @@ def get_research_question_layout(question_number):
                 html.P(descriptions[question_number]),
                 html.P(f"Error loading visualization: {str(e)}", style={'color': 'red'})
             ])
+    # In the get_research_question_layout function, add this for question_number == 2:
+    elif question_number == 2:
+        try:
+            # Load the data
+            df, df_filtered = load_and_preprocess_data('data/daily_data_with_lags.csv')
+            
+            return html.Div([
+                html.H2(f"Research Question {question_number}"),
+                html.P(questions[question_number], className="research-question"),
+                html.P(descriptions[question_number]),
+                
+                # Add dropdowns for visualization control
+                html.Div([
+                    html.Div([
+                        html.Label("Select Visualization:"),
+                        dcc.Dropdown(
+                            id='dropdown-viz-q2',
+                            options=[
+                                {'label': 'Sentiment vs Stock Returns', 'value': 'sentiment_returns'},
+                                {'label': 'Sentiment & Stock Price Over Time', 'value': 'time_series'}
+                            ],
+                            value='sentiment_returns',
+                            clearable=False
+                        )
+                    ], className='dropdown-container', style={'width': '60%', 'display': 'inline-block', 'padding-right': '10px'}),
+                    
+                    html.Div([
+                        html.Label("Select Time Period:"),
+                        dcc.Dropdown(
+                            id='dropdown-time-q2',
+                            options=[
+                                {'label': 'Next-Day Returns', 'value': 'next_day'},
+                                {'label': 'Same-Day Returns', 'value': 'same_day'}
+                            ],
+                            value='next_day',
+                            clearable=False
+                        )
+                    ], className='dropdown-container', id='time-period-container', 
+                    style={'width': '40%', 'display': 'inline-block'})
+                ], style={'display': 'flex'}),
+                
+                # Visualization container
+                html.Div([
+                    dcc.Graph(id='graph-q2')
+                ], className='viz-container'),
+                
+                # Key findings section
+                html.Div([
+                    html.H3("Key Findings from Sentiment Analysis"),
+                    html.Ul([
+                        html.Li([
+                            html.Strong("Delayed Impact: "), 
+                            "News sentiment has a statistically significant correlation with next-day returns, but not with same-day returns."
+                        ]),
+                        html.Li([
+                            html.Strong("Lagged Effect: "), 
+                            "Previous day's sentiment shows the strongest relationship with current day stock performance."
+                        ]),
+                        html.Li([
+                            html.Strong("Predictive Features: "), 
+                            "The most important predictive factors are previous day's sentiment, volume change, and news count."
+                        ]),
+                        html.Li([
+                            html.Strong("Statistical vs. Practical Significance: "), 
+                            "While the correlation is statistically significant, its practical value for prediction is limited."
+                        ]),
+                        html.Li([
+                            html.Strong("News Volume: "), 
+                            "The amount of media coverage may be as important as its sentiment in understanding stock behavior."
+                        ])
+                    ])
+                ], className='findings-container')
+            ])
+        except Exception as e:
+            return html.Div([
+                html.H2(f"Research Question {question_number}"),
+                html.P(questions[question_number], className="research-question"),
+                html.P(descriptions[question_number]),
+                html.P(f"Error loading visualization: {str(e)}", style={'color': 'red'})
+        ])
     else:
         # Generic template for other questions (can be expanded later)
         return html.Div([
@@ -211,6 +292,45 @@ def update_graph_q1(selected_year):
                 'height': 500
             }
         }
+
+
+# Callback to show/hide time period dropdown based on visualization type
+@app.callback(
+    Output('time-period-container', 'style'),
+    [Input('dropdown-viz-q2', 'value')]
+)
+def toggle_time_period_dropdown(viz_type):
+    base_style = {'width': '40%', 'display': 'inline-block'}
+    if viz_type == 'sentiment_returns':
+        return base_style
+    else:
+        return {**base_style, 'display': 'none'}
+
+# Callback for research question 2 - News sentiment visualization
+@app.callback(
+    Output('graph-q2', 'figure'),
+    [Input('dropdown-viz-q2', 'value'),
+     Input('dropdown-time-q2', 'value')]
+)
+def update_graph_q2(viz_type, time_period):
+    try:
+        # Load the data
+        df, df_filtered = load_and_preprocess_data('data/daily_data_with_lags.csv')
+        
+        # Create the visualization
+        fig = create_visualization(df_filtered, viz_type, time_period)
+        
+        return fig
+    except Exception as e:
+        # Return an empty figure with error message
+        return {
+            'data': [],
+            'layout': {
+                'title': f"Error loading visualization: {str(e)}",
+                'height': 500
+            }
+        }
+
 
 # Run the app
 if __name__ == '__main__':
