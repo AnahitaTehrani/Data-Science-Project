@@ -1,0 +1,301 @@
+playlist_id;playlist_name;track_id;track_name;artist_name
+PL1;Today's Top Hits;T5;Circles;Post Malone
+PL1;Today's Top Hits;T21;Shape of You;Ed Sheeran
+PL1;Today's Top Hits;T27;Uptown Funk;Mark Ronson, Bruno Mars
+PL1;Today's Top Hits;T23;Stairway to Heaven;Led Zeppelin
+PL1;Today's Top Hits;T16;Peaches;Justin Bieber
+PL1;Today's Top Hits;T17;SICKO MODE;Travis Scott
+PL1;Today's Top Hits;T24;Sunflower;Post Malone, Swae Lee
+PL1;Today's Top Hits;T9;God's Plan;Drake
+PL1;Today's Top Hits;T18;Senorita;Shawn Mendes, Camila Cabello
+PL1;Today's Top Hits;T29;Without Me;Halsey
+PL2;Top 50 – Global;T5;Circles;Post Malone
+PL2;Top 50 – Global;T1;Bad Guy;Billie Eilish
+PL2;Top 50 – Global;T22;Someone You Loved;Lewis Capaldi
+PL2;Top 50 – Global;T14;Memories;Maroon 5
+PL2;Top 50 – Global;T15;Old Town Road;Lil Nas X
+PL2;Top 50 – Global;T11;Levitating;Dua Lipa
+PL2;Top 50 – Global;T23;Stairway to Heaven;Led Zeppelin
+PL2;Top 50 – Global;T27;Uptown Funk;Mark Ronson, Bruno Mars
+PL2;Top 50 – Global;T29;Without Me;Halsey
+PL2;Top 50 – Global;T0;7 Rings;Ariana Grande
+PL3;RapCaviar;T19;Señorita;Shawn Mendes & Camila Cabello
+PL3;RapCaviar;T8;Don't Start Now;Dua Lipa
+PL3;RapCaviar;T26;Thunder;Imagine Dragons
+PL3;RapCaviar;T5;Circles;Post Malone
+PL3;RapCaviar;T16;Peaches;Justin Bieber
+PL3;RapCaviar;T29;Without Me;Halsey
+PL3;RapCaviar;T28;Watermelon Sugar;Harry Styles
+PL3;RapCaviar;T4;Bohemian Rhapsody;Queen
+PL3;RapCaviar;T27;Uptown Funk;Mark Ronson, Bruno Mars
+PL3;RapCaviar;T21;Shape of You;Ed Sheeran
+PL4;Viva Latino;T15;Old Town Road;Lil Nas X
+PL4;Viva Latino;T16;Peaches;Justin Bieber
+PL4;Viva Latino;T22;Someone You Loved;Lewis Capaldi
+PL4;Viva Latino;T29;Without Me;Halsey
+PL4;Viva Latino;T8;Don't Start Now;Dua Lipa
+PL4;Viva Latino;T23;Stairway to Heaven;Led Zeppelin
+PL4;Viva Latino;T19;Señorita;Shawn Mendes & Camila Cabello
+PL4;Viva Latino;T18;Senorita;Shawn Mendes, Camila Cabello
+PL4;Viva Latino;T5;Circles;Post Malone
+PL4;Viva Latino;T9;God's Plan;Drake
+PL5;All Out 2010s;T18;Senorita;Shawn Mendes, Camila Cabello
+PL5;All Out 2010s;T4;Bohemian Rhapsody;Queen
+PL5;All Out 2010s;T16;Peaches;Justin Bieber
+PL5;All Out 2010s;T22;Someone You Loved;Lewis Capaldi
+PL5;All Out 2010s;T17;SICKO MODE;Travis Scott
+PL5;All Out 2010s;T2;Believer;Imagine Dragons
+PL5;All Out 2010s;T20;Shallow;Lady Gaga, Bradley Cooper
+PL5;All Out 2010s;T6;Closer;The Chainsmokers, Halsey
+PL5;All Out 2010s;T21;Shape of You;Ed Sheeran
+PL5;All Out 2010s;T25;Telepatía;Kali Uchis
+PL6;Rock Classics;T20;Shallow;Lady Gaga, Bradley Cooper
+PL6;Rock Classics;T16;Peaches;Justin Bieber
+PL6;Rock Classics;T24;Sunflower;Post Malone, Swae Lee
+PL6;Rock Classics;T3;Blinding Lights;The Weeknd
+PL6;Rock Classics;T12;Life Is Good;Future
+PL6;Rock Classics;T22;Someone You Loved;Lewis Capaldi
+PL6;Rock Classics;T8;Don't Start Now;Dua Lipa
+PL6;Rock Classics;T23;Stairway to Heaven;Led Zeppelin
+PL6;Rock Classics;T28;Watermelon Sugar;Harry Styles
+PL6;Rock Classics;T25;Telepatía;Kali Uchis
+PL7;All Out 2000s;T20;Shallow;Lady Gaga, Bradley Cooper
+PL7;All Out 2000s;T12;Life Is Good;Future
+PL7;All Out 2000s;T13;Lovely;Billie Eilish
+PL7;All Out 2000s;T5;Circles;Post Malone
+PL7;All Out 2000s;T0;7 Rings;Ariana Grande
+PL7;All Out 2000s;T27;Uptown Funk;Mark Ronson, Bruno Mars
+PL7;All Out 2000s;T15;Old Town Road;Lil Nas X
+PL7;All Out 2000s;T1;Bad Guy;Billie Eilish
+PL7;All Out 2000s;T28;Watermelon Sugar;Harry Styles
+PL7;All Out 2000s;T24;Sunflower;Post Malone, Swae Lee
+PL8;All Out 80s;T8;Don't Start Now;Dua Lipa
+PL8;All Out 80s;T1;Bad Guy;Billie Eilish
+PL8;All Out 80s;T29;Without Me;Halsey
+PL8;All Out 80s;T5;Circles;Post Malone
+PL8;All Out 80s;T28;Watermelon Sugar;Harry Styles
+PL8;All Out 80s;T7;Dance Monkey;Tones and I
+PL8;All Out 80s;T23;Stairway to Heaven;Led Zeppelin
+PL8;All Out 80s;T26;Thunder;Imagine Dragons
+PL8;All Out 80s;T18;Senorita;Shawn Mendes, Camila Cabello
+PL8;All Out 80s;T4;Bohemian Rhapsody;Queen
+PL9;Songs to Sing in the Car;T9;God's Plan;Drake
+PL9;Songs to Sing in the Car;T11;Levitating;Dua Lipa
+PL9;Songs to Sing in the Car;T23;Stairway to Heaven;Led Zeppelin
+PL9;Songs to Sing in the Car;T6;Closer;The Chainsmokers, Halsey
+PL9;Songs to Sing in the Car;T24;Sunflower;Post Malone, Swae Lee
+PL9;Songs to Sing in the Car;T28;Watermelon Sugar;Harry Styles
+PL9;Songs to Sing in the Car;T17;SICKO MODE;Travis Scott
+PL9;Songs to Sing in the Car;T16;Peaches;Justin Bieber
+PL9;Songs to Sing in the Car;T27;Uptown Funk;Mark Ronson, Bruno Mars
+PL9;Songs to Sing in the Car;T15;Old Town Road;Lil Nas X
+PL10;Beast Mode;T27;Uptown Funk;Mark Ronson, Bruno Mars
+PL10;Beast Mode;T2;Believer;Imagine Dragons
+PL10;Beast Mode;T7;Dance Monkey;Tones and I
+PL10;Beast Mode;T18;Senorita;Shawn Mendes, Camila Cabello
+PL10;Beast Mode;T28;Watermelon Sugar;Harry Styles
+PL10;Beast Mode;T20;Shallow;Lady Gaga, Bradley Cooper
+PL10;Beast Mode;T25;Telepatía;Kali Uchis
+PL10;Beast Mode;T4;Bohemian Rhapsody;Queen
+PL10;Beast Mode;T29;Without Me;Halsey
+PL10;Beast Mode;T11;Levitating;Dua Lipa
+PL11;Chill Hits;T23;Stairway to Heaven;Led Zeppelin
+PL11;Chill Hits;T12;Life Is Good;Future
+PL11;Chill Hits;T0;7 Rings;Ariana Grande
+PL11;Chill Hits;T21;Shape of You;Ed Sheeran
+PL11;Chill Hits;T11;Levitating;Dua Lipa
+PL11;Chill Hits;T8;Don't Start Now;Dua Lipa
+PL11;Chill Hits;T24;Sunflower;Post Malone, Swae Lee
+PL11;Chill Hits;T15;Old Town Road;Lil Nas X
+PL11;Chill Hits;T16;Peaches;Justin Bieber
+PL11;Chill Hits;T2;Believer;Imagine Dragons
+PL12;Hot Country;T23;Stairway to Heaven;Led Zeppelin
+PL12;Hot Country;T26;Thunder;Imagine Dragons
+PL12;Hot Country;T6;Closer;The Chainsmokers, Halsey
+PL12;Hot Country;T21;Shape of You;Ed Sheeran
+PL12;Hot Country;T11;Levitating;Dua Lipa
+PL12;Hot Country;T17;SICKO MODE;Travis Scott
+PL12;Hot Country;T18;Senorita;Shawn Mendes, Camila Cabello
+PL12;Hot Country;T12;Life Is Good;Future
+PL12;Hot Country;T25;Telepatía;Kali Uchis
+PL12;Hot Country;T28;Watermelon Sugar;Harry Styles
+PL13;Pop Rising;T9;God's Plan;Drake
+PL13;Pop Rising;T13;Lovely;Billie Eilish
+PL13;Pop Rising;T24;Sunflower;Post Malone, Swae Lee
+PL13;Pop Rising;T15;Old Town Road;Lil Nas X
+PL13;Pop Rising;T8;Don't Start Now;Dua Lipa
+PL13;Pop Rising;T7;Dance Monkey;Tones and I
+PL13;Pop Rising;T10;Hawái;Maluma
+PL13;Pop Rising;T25;Telepatía;Kali Uchis
+PL13;Pop Rising;T3;Blinding Lights;The Weeknd
+PL13;Pop Rising;T1;Bad Guy;Billie Eilish
+PL14;Dance Hits;T0;7 Rings;Ariana Grande
+PL14;Dance Hits;T9;God's Plan;Drake
+PL14;Dance Hits;T10;Hawái;Maluma
+PL14;Dance Hits;T17;SICKO MODE;Travis Scott
+PL14;Dance Hits;T15;Old Town Road;Lil Nas X
+PL14;Dance Hits;T14;Memories;Maroon 5
+PL14;Dance Hits;T19;Señorita;Shawn Mendes & Camila Cabello
+PL14;Dance Hits;T20;Shallow;Lady Gaga, Bradley Cooper
+PL14;Dance Hits;T28;Watermelon Sugar;Harry Styles
+PL14;Dance Hits;T22;Someone You Loved;Lewis Capaldi
+PL15;Alternative Beats;T12;Life Is Good;Future
+PL15;Alternative Beats;T13;Lovely;Billie Eilish
+PL15;Alternative Beats;T7;Dance Monkey;Tones and I
+PL15;Alternative Beats;T17;SICKO MODE;Travis Scott
+PL15;Alternative Beats;T22;Someone You Loved;Lewis Capaldi
+PL15;Alternative Beats;T1;Bad Guy;Billie Eilish
+PL15;Alternative Beats;T27;Uptown Funk;Mark Ronson, Bruno Mars
+PL15;Alternative Beats;T4;Bohemian Rhapsody;Queen
+PL15;Alternative Beats;T28;Watermelon Sugar;Harry Styles
+PL15;Alternative Beats;T0;7 Rings;Ariana Grande
+PL16;Indie Pop;T0;7 Rings;Ariana Grande
+PL16;Indie Pop;T6;Closer;The Chainsmokers, Halsey
+PL16;Indie Pop;T21;Shape of You;Ed Sheeran
+PL16;Indie Pop;T9;God's Plan;Drake
+PL16;Indie Pop;T22;Someone You Loved;Lewis Capaldi
+PL16;Indie Pop;T10;Hawái;Maluma
+PL16;Indie Pop;T11;Levitating;Dua Lipa
+PL16;Indie Pop;T5;Circles;Post Malone
+PL16;Indie Pop;T15;Old Town Road;Lil Nas X
+PL16;Indie Pop;T27;Uptown Funk;Mark Ronson, Bruno Mars
+PL17;Electro Chill;T21;Shape of You;Ed Sheeran
+PL17;Electro Chill;T6;Closer;The Chainsmokers, Halsey
+PL17;Electro Chill;T10;Hawái;Maluma
+PL17;Electro Chill;T28;Watermelon Sugar;Harry Styles
+PL17;Electro Chill;T11;Levitating;Dua Lipa
+PL17;Electro Chill;T22;Someone You Loved;Lewis Capaldi
+PL17;Electro Chill;T7;Dance Monkey;Tones and I
+PL17;Electro Chill;T20;Shallow;Lady Gaga, Bradley Cooper
+PL17;Electro Chill;T0;7 Rings;Ariana Grande
+PL17;Electro Chill;T15;Old Town Road;Lil Nas X
+PL18;Workout Mix;T12;Life Is Good;Future
+PL18;Workout Mix;T29;Without Me;Halsey
+PL18;Workout Mix;T24;Sunflower;Post Malone, Swae Lee
+PL18;Workout Mix;T23;Stairway to Heaven;Led Zeppelin
+PL18;Workout Mix;T26;Thunder;Imagine Dragons
+PL18;Workout Mix;T28;Watermelon Sugar;Harry Styles
+PL18;Workout Mix;T20;Shallow;Lady Gaga, Bradley Cooper
+PL18;Workout Mix;T17;SICKO MODE;Travis Scott
+PL18;Workout Mix;T11;Levitating;Dua Lipa
+PL18;Workout Mix;T1;Bad Guy;Billie Eilish
+PL19;Party Hits;T3;Blinding Lights;The Weeknd
+PL19;Party Hits;T21;Shape of You;Ed Sheeran
+PL19;Party Hits;T12;Life Is Good;Future
+PL19;Party Hits;T14;Memories;Maroon 5
+PL19;Party Hits;T22;Someone You Loved;Lewis Capaldi
+PL19;Party Hits;T28;Watermelon Sugar;Harry Styles
+PL19;Party Hits;T11;Levitating;Dua Lipa
+PL19;Party Hits;T26;Thunder;Imagine Dragons
+PL19;Party Hits;T27;Uptown Funk;Mark Ronson, Bruno Mars
+PL19;Party Hits;T19;Señorita;Shawn Mendes & Camila Cabello
+PL20;Latin Pop;T14;Memories;Maroon 5
+PL20;Latin Pop;T26;Thunder;Imagine Dragons
+PL20;Latin Pop;T6;Closer;The Chainsmokers, Halsey
+PL20;Latin Pop;T1;Bad Guy;Billie Eilish
+PL20;Latin Pop;T15;Old Town Road;Lil Nas X
+PL20;Latin Pop;T11;Levitating;Dua Lipa
+PL20;Latin Pop;T5;Circles;Post Malone
+PL20;Latin Pop;T28;Watermelon Sugar;Harry Styles
+PL20;Latin Pop;T27;Uptown Funk;Mark Ronson, Bruno Mars
+PL20;Latin Pop;T21;Shape of You;Ed Sheeran
+PL21;Throwback Thursday;T12;Life Is Good;Future
+PL21;Throwback Thursday;T3;Blinding Lights;The Weeknd
+PL21;Throwback Thursday;T26;Thunder;Imagine Dragons
+PL21;Throwback Thursday;T9;God's Plan;Drake
+PL21;Throwback Thursday;T6;Closer;The Chainsmokers, Halsey
+PL21;Throwback Thursday;T25;Telepatía;Kali Uchis
+PL21;Throwback Thursday;T1;Bad Guy;Billie Eilish
+PL21;Throwback Thursday;T17;SICKO MODE;Travis Scott
+PL21;Throwback Thursday;T4;Bohemian Rhapsody;Queen
+PL21;Throwback Thursday;T14;Memories;Maroon 5
+PL22;Chill Vibes;T25;Telepatía;Kali Uchis
+PL22;Chill Vibes;T3;Blinding Lights;The Weeknd
+PL22;Chill Vibes;T17;SICKO MODE;Travis Scott
+PL22;Chill Vibes;T12;Life Is Good;Future
+PL22;Chill Vibes;T28;Watermelon Sugar;Harry Styles
+PL22;Chill Vibes;T22;Someone You Loved;Lewis Capaldi
+PL22;Chill Vibes;T6;Closer;The Chainsmokers, Halsey
+PL22;Chill Vibes;T11;Levitating;Dua Lipa
+PL22;Chill Vibes;T5;Circles;Post Malone
+PL22;Chill Vibes;T23;Stairway to Heaven;Led Zeppelin
+PL23;Deep Focus;T26;Thunder;Imagine Dragons
+PL23;Deep Focus;T21;Shape of You;Ed Sheeran
+PL23;Deep Focus;T29;Without Me;Halsey
+PL23;Deep Focus;T9;God's Plan;Drake
+PL23;Deep Focus;T14;Memories;Maroon 5
+PL23;Deep Focus;T24;Sunflower;Post Malone, Swae Lee
+PL23;Deep Focus;T28;Watermelon Sugar;Harry Styles
+PL23;Deep Focus;T8;Don't Start Now;Dua Lipa
+PL23;Deep Focus;T23;Stairway to Heaven;Led Zeppelin
+PL23;Deep Focus;T25;Telepatía;Kali Uchis
+PL24;Acoustic Covers;T28;Watermelon Sugar;Harry Styles
+PL24;Acoustic Covers;T9;God's Plan;Drake
+PL24;Acoustic Covers;T29;Without Me;Halsey
+PL24;Acoustic Covers;T20;Shallow;Lady Gaga, Bradley Cooper
+PL24;Acoustic Covers;T21;Shape of You;Ed Sheeran
+PL24;Acoustic Covers;T22;Someone You Loved;Lewis Capaldi
+PL24;Acoustic Covers;T16;Peaches;Justin Bieber
+PL24;Acoustic Covers;T14;Memories;Maroon 5
+PL24;Acoustic Covers;T1;Bad Guy;Billie Eilish
+PL24;Acoustic Covers;T27;Uptown Funk;Mark Ronson, Bruno Mars
+PL25;Happy Hits;T24;Sunflower;Post Malone, Swae Lee
+PL25;Happy Hits;T8;Don't Start Now;Dua Lipa
+PL25;Happy Hits;T12;Life Is Good;Future
+PL25;Happy Hits;T26;Thunder;Imagine Dragons
+PL25;Happy Hits;T10;Hawái;Maluma
+PL25;Happy Hits;T27;Uptown Funk;Mark Ronson, Bruno Mars
+PL25;Happy Hits;T16;Peaches;Justin Bieber
+PL25;Happy Hits;T0;7 Rings;Ariana Grande
+PL25;Happy Hits;T7;Dance Monkey;Tones and I
+PL25;Happy Hits;T14;Memories;Maroon 5
+PL26;New Music Friday;T26;Thunder;Imagine Dragons
+PL26;New Music Friday;T24;Sunflower;Post Malone, Swae Lee
+PL26;New Music Friday;T10;Hawái;Maluma
+PL26;New Music Friday;T13;Lovely;Billie Eilish
+PL26;New Music Friday;T18;Senorita;Shawn Mendes, Camila Cabello
+PL26;New Music Friday;T21;Shape of You;Ed Sheeran
+PL26;New Music Friday;T2;Believer;Imagine Dragons
+PL26;New Music Friday;T29;Without Me;Halsey
+PL26;New Music Friday;T7;Dance Monkey;Tones and I
+PL26;New Music Friday;T11;Levitating;Dua Lipa
+PL27;Soft Pop Hits;T27;Uptown Funk;Mark Ronson, Bruno Mars
+PL27;Soft Pop Hits;T8;Don't Start Now;Dua Lipa
+PL27;Soft Pop Hits;T28;Watermelon Sugar;Harry Styles
+PL27;Soft Pop Hits;T23;Stairway to Heaven;Led Zeppelin
+PL27;Soft Pop Hits;T16;Peaches;Justin Bieber
+PL27;Soft Pop Hits;T14;Memories;Maroon 5
+PL27;Soft Pop Hits;T29;Without Me;Halsey
+PL27;Soft Pop Hits;T4;Bohemian Rhapsody;Queen
+PL27;Soft Pop Hits;T7;Dance Monkey;Tones and I
+PL27;Soft Pop Hits;T25;Telepatía;Kali Uchis
+PL28;Country Hits;T4;Bohemian Rhapsody;Queen
+PL28;Country Hits;T8;Don't Start Now;Dua Lipa
+PL28;Country Hits;T27;Uptown Funk;Mark Ronson, Bruno Mars
+PL28;Country Hits;T18;Senorita;Shawn Mendes, Camila Cabello
+PL28;Country Hits;T6;Closer;The Chainsmokers, Halsey
+PL28;Country Hits;T13;Lovely;Billie Eilish
+PL28;Country Hits;T21;Shape of You;Ed Sheeran
+PL28;Country Hits;T26;Thunder;Imagine Dragons
+PL28;Country Hits;T23;Stairway to Heaven;Led Zeppelin
+PL28;Country Hits;T2;Believer;Imagine Dragons
+PL29;Rock This;T8;Don't Start Now;Dua Lipa
+PL29;Rock This;T22;Someone You Loved;Lewis Capaldi
+PL29;Rock This;T12;Life Is Good;Future
+PL29;Rock This;T16;Peaches;Justin Bieber
+PL29;Rock This;T18;Senorita;Shawn Mendes, Camila Cabello
+PL29;Rock This;T23;Stairway to Heaven;Led Zeppelin
+PL29;Rock This;T10;Hawái;Maluma
+PL29;Rock This;T29;Without Me;Halsey
+PL29;Rock This;T11;Levitating;Dua Lipa
+PL29;Rock This;T9;God's Plan;Drake
+PL30;Peaceful Piano;T23;Stairway to Heaven;Led Zeppelin
+PL30;Peaceful Piano;T1;Bad Guy;Billie Eilish
+PL30;Peaceful Piano;T14;Memories;Maroon 5
+PL30;Peaceful Piano;T3;Blinding Lights;The Weeknd
+PL30;Peaceful Piano;T17;SICKO MODE;Travis Scott
+PL30;Peaceful Piano;T11;Levitating;Dua Lipa
+PL30;Peaceful Piano;T18;Senorita;Shawn Mendes, Camila Cabello
+PL30;Peaceful Piano;T13;Lovely;Billie Eilish
+PL30;Peaceful Piano;T5;Circles;Post Malone
+PL30;Peaceful Piano;T8;Don't Start Now;Dua Lipa

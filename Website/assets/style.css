@@ -230,3 +230,49 @@ body {
     margin-bottom: 1rem;
     line-height: 1.5;
 }
+
+/* Additional styles for Questions 7 and 8 */
+
+/* Adding emphasis for correlation values */
+.correlation-highlight {
+    font-weight: bold;
+    color: #1DB954;
+    font-size: 1.1em;
+}
+
+/* Style for the key findings section */
+.key-findings {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-left: 4px solid #1DB954;
+    margin-top: 1rem;
+}
+
+/* Enhance visualization text styling */
+.viz-text {
+    line-height: 1.6;
+    margin-top: 1.5rem;
+}
+
+.viz-text ul {
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.viz-text li {
+    margin-bottom: 0.5rem;
+}
+
+/* Make dropdown more prominent */
+.dropdown-container select {
+    border: 2px solid #1DB954;
+    border-radius: 4px;
+    padding: 8px 12px;
+}
+
+.dropdown-container label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+}
