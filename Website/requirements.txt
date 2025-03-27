@@ -4,3 +4,10 @@ dash-html-components
 plotly
 pandas
 gunicorn
+scipy
+numpy
+matplotlib
+seaborn
+plotly-express
+plotly-graph-objects
+plotly-subplots
