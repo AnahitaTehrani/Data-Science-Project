@@ -205,34 +205,7 @@ def get_research_question_layout(question_number):
                 # Visualization container
                 html.Div([
                     dcc.Graph(id='graph-q2')
-                ], className='viz-container'),
-                
-                # Key findings section
-                html.Div([
-                    html.H3("Key Findings from Sentiment Analysis"),
-                    html.Ul([
-                        html.Li([
-                            html.Strong("Delayed Impact: "), 
-                            "News sentiment has a statistically significant correlation with next-day returns, but not with same-day returns."
-                        ]),
-                        html.Li([
-                            html.Strong("Lagged Effect: "), 
-                            "Previous day's sentiment shows the strongest relationship with current day stock performance."
-                        ]),
-                        html.Li([
-                            html.Strong("Predictive Features: "), 
-                            "The most important predictive factors are previous day's sentiment, volume change, and news count."
-                        ]),
-                        html.Li([
-                            html.Strong("Statistical vs. Practical Significance: "), 
-                            "While the correlation is statistically significant, its practical value for prediction is limited."
-                        ]),
-                        html.Li([
-                            html.Strong("News Volume: "), 
-                            "The amount of media coverage may be as important as its sentiment in understanding stock behavior."
-                        ])
-                    ])
-                ], className='findings-container')
+                ], className='viz-container')
             ])
         except Exception as e:
             return html.Div([

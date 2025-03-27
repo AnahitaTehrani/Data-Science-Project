@@ -194,23 +194,6 @@ def create_sentiment_return_scatter(df_filtered, time_period='next_day'):
         borderwidth=1
     )
     
-    # Add correlation statistics annotation
-    significance = "(significant)" if p_value < 0.05 else "(not significant)"
-    stats_text = (f'Correlation: r = {r_value:.4f}<br>'
-                  f'p-value: {p_value:.4f} {significance}<br>'
-                  f'Slope: {slope:.4f}')
-    
-    fig.add_annotation(
-        x=0.05, y=0.95,
-        xref="paper", yref="paper",
-        text=stats_text,
-        showarrow=False,
-        bgcolor="white",
-        bordercolor="black",
-        borderwidth=1,
-        opacity=0.8
-    )
-    
     # Update layout for aesthetics
     fig.update_layout(
         template="plotly_white",
