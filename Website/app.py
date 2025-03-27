@@ -394,7 +394,66 @@ def get_research_question_layout(question_number):
                 # Visualization container
                 html.Div([
                     dcc.Graph(id='graph-q5')
-                ], className='viz-container')
+                ], className='viz-container'),
+                
+                # PDF section
+                html.Div([
+                    html.H3("Demographic Analysis"),
+                    
+                    # PDF navigation
+                    html.Div([
+                        html.P("Quick Access:"),
+                        html.Div([
+                            html.A("Age Demographics", href="#age-demographics", className="pdf-nav-link"),
+                            html.A("Gender Demographics", href="#gender-demographics", className="pdf-nav-link"),
+                        ], className="pdf-navigation")
+                    ], className="pdf-nav-container"),
+                    
+                    # PDF 1: Age Demographics
+                    html.Div([
+                        html.H4("Spotify's Age Demographics (%)", id="age-demographics"),
+                        html.Div([
+                            html.A(
+                                html.Button("Download PDF", className="download-btn"),
+                                href="/assets/Spotify-Age-Demographics.pdf",
+                                download="Spotify-Age-Demographics.pdf",
+                                target="_blank"
+                            ),
+                        ], className="pdf-controls"),
+                        html.Iframe(
+                            src="/assets/Spotify-Age-Demographics.pdf",
+                            className="pdf-frame"
+                        )
+                    ], className="pdf-container"),
+                    
+                    # PDF 2: Gender Demographics
+                    html.Div([
+                        html.H4("Spotify's Gender Demographics (%)", id="gender-demographics"),
+                        html.Div([
+                            html.A(
+                                html.Button("Download PDF", className="download-btn"),
+                                href="/assets/Spotify-Gender-Demographics.pdf",
+                                download="Spotify-Gender-Demographics.pdf",
+                                target="_blank"
+                            ),
+                        ], className="pdf-controls"),
+                        html.Iframe(
+                            src="/assets/Spotify-Gender-Demographics.pdf",
+                            className="pdf-frame"
+                        )
+                    ], className="pdf-container"),
+                    
+                    # Summary
+                    html.Div([
+                        html.H4("Summary"),
+                        html.P([
+                            "The demographic analysis reveals that Spotify's user base is predominantly young adult to middle-aged, with the 25-34 age group representing the largest segment (29%). ",
+                            "Gender distribution shows a slight imbalance, with women accounting for 56% of users compared to 44% for men. ",
+                            "These demographic patterns highlight Spotify's strong appeal among younger audiences, while also showing potential growth opportunities among older age groups. ",
+                            "The gender distribution may influence content curation strategies and marketing approaches to ensure the platform addresses preferences across all user segments."
+                        ]),
+                    ], className="pdf-summary")
+                ], className="pdf-section")
             ])
         except Exception as e:
             return html.Div([
@@ -540,8 +599,18 @@ def update_graph_q4(selected_viz):
                 'height': 500
             }
         }
+        
+@app.callback(
+    [Output('revenue-section', 'style'),
+     Output('users-section', 'style')],
+    [Input('dropdown-q4', 'value')]
+)
+def toggle_q4_sections(selected_viz):
+    if selected_viz == 'revenue':
+        return {'display': 'block'}, {'display': 'none'}
+    else:  # users
+        return {'display': 'none'}, {'display': 'block'}
 
-# Callback for research question 5 - Demographics visualization
 @app.callback(
     Output('graph-q5', 'figure'),
     [Input('dropdown-q5', 'value')]
@@ -563,18 +632,7 @@ def update_graph_q5(selected_demographic):
                 'height': 500
             }
         }
-        
-@app.callback(
-    [Output('revenue-section', 'style'),
-     Output('users-section', 'style')],
-    [Input('dropdown-q4', 'value')]
-)
-def toggle_q4_sections(selected_viz):
-    if selected_viz == 'revenue':
-        return {'display': 'block'}, {'display': 'none'}
-    else:  # users
-        return {'display': 'none'}, {'display': 'block'}
-   
+
 # Run the app
 if __name__ == '__main__':
     app.run_server(debug=True)
