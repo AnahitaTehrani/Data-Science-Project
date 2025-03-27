@@ -20,7 +20,7 @@ def create_regional_activity_fig(df):
     fig = px.bar(
         df_avg, 
         barmode='group',
-        title='Spotify Monthly Active Users (MAU) by Region (2019-2024)',
+        title='Spotify Monthly Active Users (MAU) by Region (2018-2024)',
         labels={'value': 'annual average of Mau in %', 'Year': 'Year'},
         color_discrete_sequence=px.colors.qualitative.Bold,
     )
