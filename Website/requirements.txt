@@ -8,6 +8,3 @@ scipy
 numpy
 matplotlib
 seaborn
-plotly-express
-plotly-graph-objects
-plotly-subplots
