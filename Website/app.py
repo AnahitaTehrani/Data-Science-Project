@@ -6,14 +6,35 @@ import plotly.express as px
 import pandas as pd
 import os
 from visualizations.q2_visualization import load_and_preprocess_data, create_visualization
-
-# Import the visualization function directly
+from visualizations.q4_visualization import create_revenue_visualization, create_users_comparison_visualization
+from visualizations.q5_visualization import create_age_demographics_visualization, create_gender_demographics_visualization
 from visualizations.q1_visualization import create_user_growth_visualization
 
-# Initialize the Dash app
 app = dash.Dash(__name__, 
                 suppress_callback_exceptions=True,
                 meta_tags=[{"name": "viewport", "content": "width=device-width, initial-scale=1"}])
+
+# Add this for Font Awesome icons
+app.index_string = '''
+<!DOCTYPE html>
+<html>
+    <head>
+        {%metas%}
+        <title>Spotify Insights</title>
+        {%favicon%}
+        {%css%}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
+    <body>
+        {%app_entry%}
+        <footer>
+            {%config%}
+            {%scripts%}
+            {%renderer%}
+        </footer>
+    </body>
+</html>
+'''
 
 # Required for Render deployment
 server = app.server
@@ -216,6 +237,172 @@ def get_research_question_layout(question_number):
                 html.P(descriptions[question_number]),
                 html.P(f"Error loading visualization: {str(e)}", style={'color': 'red'})
         ])
+    # Modifications to app.py to integrate Research Questions 4 and 5
+
+    # In the get_research_question_layout function, add these blocks for question_number 4 and 5:
+
+    # For Question 4 (Free vs Premium Users):
+    elif question_number == 4:
+        try:
+            return html.Div([
+                html.H2(f"Research Question {question_number}"),
+                html.P(questions[question_number], className="research-question"),
+                html.P(descriptions[question_number]),
+                # Keep the existing visualization dropdown
+                html.Div([
+                    html.Label("Select Visualization:"),
+                    dcc.Dropdown(
+                        id='dropdown-q4',
+                        options=[
+                            {'label': 'Revenue Breakdown', 'value': 'revenue'},
+                            {'label': 'User Comparison', 'value': 'users'}
+                        ],
+                        value='revenue',
+                        clearable=False
+                    )
+                ], className='dropdown-container'),
+                
+                # Keep the visualization container
+                html.Div([
+                    dcc.Graph(id='graph-q4')
+                ], className='viz-container'),
+                
+                # PDF section
+                html.Div([
+                    html.H3("Revenue and User Comparison Analysis"),
+                    
+                    # PDF navigation
+                    html.Div([
+                        html.P("Quick Access:"),
+                        html.Div([
+                            html.A("Ad-Supported Revenue", href="#ad-supported-revenue", className="pdf-nav-link"),
+                            html.A("Users Comparison", href="#users-comparison", className="pdf-nav-link"),
+                            html.A("Premium Revenue", href="#premium-revenue", className="pdf-nav-link"),
+                            html.A("Total Revenue", href="#total-revenue", className="pdf-nav-link"),
+                        ], className="pdf-navigation")
+                    ], className="pdf-nav-container"),
+                    
+                    # PDF 1: Ad-Supported Revenue
+                    html.Div([
+                        html.H4("Ad-Supported Revenue Distribution (2019-2024)", id="ad-supported-revenue"),
+                        html.Div([
+                            html.A(
+                                html.Button("Download PDF", className="download-btn"),
+                                href="/assets/Ad-Supported-Revenue-Distribution.pdf",
+                                download="Ad-Supported-Revenue-Distribution.pdf",
+                                target="_blank"
+                            ),
+                        ], className="pdf-controls"),
+                        html.Iframe(
+                            src="/assets/Ad-Supported-Revenue-Distribution.pdf",
+                            className="pdf-frame"
+                        )
+                    ], className="pdf-container"),
+                    
+                    # PDF 2: Users Comparison
+                    html.Div([
+                        html.H4("Ad-Supported Users vs. Premium Subscribers (2019-2024)", id="users-comparison"),
+                        html.Div([
+                            html.A(
+                                html.Button("Download PDF", className="download-btn"),
+                                href="/assets/Ad-Supported-Users-vs-Premium-Subscribers.pdf",
+                                download="Ad-Supported-Users-vs-Premium-Subscribers.pdf",
+                                target="_blank"
+                            ),
+                        ], className="pdf-controls"),
+                        html.Iframe(
+                            src="/assets/Ad-Supported-Users-vs-Premium-Subscribers.pdf",
+                            className="pdf-frame"
+                        )
+                    ], className="pdf-container"),
+                    
+                    # PDF 3: Premium Revenue
+                    html.Div([
+                        html.H4("Premium Revenue Distribution (2019-2024)", id="premium-revenue"),
+                        html.Div([
+                            html.A(
+                                html.Button("Download PDF", className="download-btn"),
+                                href="/assets/Premium-Revenue-Distribution.pdf",
+                                download="Premium-Revenue-Distribution.pdf",
+                                target="_blank"
+                            ),
+                        ], className="pdf-controls"),
+                        html.Iframe(
+                            src="/assets/Premium-Revenue-Distribution.pdf",
+                            className="pdf-frame"
+                        )
+                    ], className="pdf-container"),
+                    
+                    # PDF 4: Total Revenue
+                    html.Div([
+                        html.H4("Spotify Total Revenue Distribution (2019-2024)", id="total-revenue"),
+                        html.Div([
+                            html.A(
+                                html.Button("Download PDF", className="download-btn"),
+                                href="/assets/Spotify-Revenue-Distribution.pdf",
+                                download="Spotify-Revenue-Distribution.pdf",
+                                target="_blank"
+                            ),
+                        ], className="pdf-controls"),
+                        html.Iframe(
+                            src="/assets/Spotify-Revenue-Distribution.pdf",
+                            className="pdf-frame"
+                        )
+                    ], className="pdf-container"),
+                    
+                    # Conclusion
+                    html.Div([
+                        html.H4("Summary"),
+                        html.P([
+                            "The analysis clearly demonstrates that while premium subscribers (42% of users) generate approximately 88% of Spotify's revenue, ",
+                            "free users still play a vital role in the platform's growth strategy. Both user segments show steady growth from 2019 to 2024, ",
+                            "with total revenue reaching €15.67 billion in 2024. The COVID-19 pandemic period (2020-2021) shows notable increases in both users and revenue."
+                        ]),
+                    ], className="pdf-summary")
+                ], className="pdf-section")
+            ])
+        except Exception as e:
+            return html.Div([
+                html.H2(f"Research Question {question_number}"),
+                html.P(questions[question_number], className="research-question"),
+                html.P(descriptions[question_number]),
+                html.P(f"Error loading content: {str(e)}", style={'color': 'red'})
+            ])
+        
+    # For Question 5 (Demographics):
+    elif question_number == 5:
+        try:
+            return html.Div([
+                html.H2(f"Research Question {question_number}"),
+                html.P(questions[question_number], className="research-question"),
+                html.P(descriptions[question_number]),
+                
+                # Add dropdown for visualization selection
+                html.Div([
+                    html.Label("Select Demographic Factor:"),
+                    dcc.Dropdown(
+                        id='dropdown-q5',
+                        options=[
+                            {'label': 'Age Distribution', 'value': 'age'},
+                            {'label': 'Gender Distribution', 'value': 'gender'}
+                        ],
+                        value='age',
+                        clearable=False
+                    )
+                ], className='dropdown-container'),
+                
+                # Visualization container
+                html.Div([
+                    dcc.Graph(id='graph-q5')
+                ], className='viz-container')
+            ])
+        except Exception as e:
+            return html.Div([
+                html.H2(f"Research Question {question_number}"),
+                html.P(questions[question_number], className="research-question"),
+                html.P(descriptions[question_number]),
+                html.P(f"Error loading visualization: {str(e)}", style={'color': 'red'})
+            ])
     else:
         # Generic template for other questions (can be expanded later)
         return html.Div([
@@ -331,7 +518,63 @@ def update_graph_q2(viz_type, time_period):
             }
         }
 
+# Callback for research question 4 - Free vs Premium Users visualizations
+@app.callback(
+    Output('graph-q4', 'figure'),
+    [Input('dropdown-q4', 'value')]
+)
+def update_graph_q4(selected_viz):
+    try:
+        if selected_viz == 'revenue':
+            fig = create_revenue_visualization()
+        else:  # users
+            fig = create_users_comparison_visualization()
+            
+        return fig
+    except Exception as e:
+        # Return an empty figure with error message
+        return {
+            'data': [],
+            'layout': {
+                'title': f"Error loading visualization: {str(e)}",
+                'height': 500
+            }
+        }
 
+# Callback for research question 5 - Demographics visualization
+@app.callback(
+    Output('graph-q5', 'figure'),
+    [Input('dropdown-q5', 'value')]
+)
+def update_graph_q5(selected_demographic):
+    try:
+        if selected_demographic == 'age':
+            fig = create_age_demographics_visualization()
+        else:  # gender
+            fig = create_gender_demographics_visualization()
+            
+        return fig
+    except Exception as e:
+        # Return an empty figure with error message
+        return {
+            'data': [],
+            'layout': {
+                'title': f"Error loading visualization: {str(e)}",
+                'height': 500
+            }
+        }
+        
+@app.callback(
+    [Output('revenue-section', 'style'),
+     Output('users-section', 'style')],
+    [Input('dropdown-q4', 'value')]
+)
+def toggle_q4_sections(selected_viz):
+    if selected_viz == 'revenue':
+        return {'display': 'block'}, {'display': 'none'}
+    else:  # users
+        return {'display': 'none'}, {'display': 'block'}
+   
 # Run the app
 if __name__ == '__main__':
     app.run_server(debug=True)

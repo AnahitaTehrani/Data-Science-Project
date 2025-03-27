@@ -107,3 +107,126 @@ body {
         margin-bottom: 0.5rem;
     }
 }
+
+/* PDF Styling */
+.pdf-section {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-top: 1.5rem;
+}
+
+.pdf-container {
+    margin-bottom: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.pdf-frame {
+    width: 100%;
+    height: 800px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+.pdf-controls {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+
+.download-btn {
+    background-color: #1DB954;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 24px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.download-btn:hover {
+    background-color: #18a449;
+}
+
+.pdf-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.pdf-nav-link {
+    color: #1DB954;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 24px;
+    background-color: #f0f0f0;
+    transition: all 0.2s;
+}
+
+.pdf-nav-link:hover {
+    background-color: #1DB954;
+    color: white;
+}
+
+.pdf-nav-container {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.pdf-summary {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+    border-left: 4px solid #1DB954;
+}
+
+/* Responsive adjustments for PDFs */
+@media (max-width: 768px) {
+    .pdf-frame {
+        height: 500px;
+    }
+    
+    .pdf-navigation {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .pdf-nav-link {
+        display: block;
+        text-align: center;
+    }
+}
+
+/* New styles for visualization images */
+.viz-image {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    display: block;
+    margin: 0 auto 2rem auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.viz-text {
+    margin-top: 1rem;
+}
+
+.viz-text h4 {
+    color: #191414;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.viz-text p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
