@@ -60,9 +60,9 @@ def create_gender_demographics_visualization():
     Creates a pie chart showing Spotify's gender demographics.
     """
     # Sample gender data (you can replace with actual data)
-    labels = ['Male', 'Female', 'Other/Not Specified']
-    values = [52, 45, 3]  # Percentages
-    colors = ['#1DB954', '#FF1493', '#4169E1']  # Spotify green, pink, blue
+    labels = ['Male', 'Female']
+    values = [45, 55]  # Percentages
+    colors = ['#1DB954', '#FF1493']  # Spotify green, pink, blue
     
     # Create the figure
     fig = go.Figure(data=[go.Pie(
