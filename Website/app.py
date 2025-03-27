@@ -72,6 +72,8 @@ def get_home_layout():
     return html.Div([
         html.H2("Welcome to Spotify Insights: User Behavior, Media Influence, and Market Dynamics"),
         html.P("This interactive dashboard presents visualizations for eight research questions about Spotify's growth, user behavior, and market dynamics."),
+        html.P("Hi, we are a group of four students from CAU Kiel working on a Data Science project focused on Spotify."),
+        html.P("Spotify is a leading global music streaming platform with millions of monthly active users. This analysis examines the platform’s user growth over time, the impact of economic factors, and regional usage trends. Furthermore, it explores the balance between free and premium subscribers and the effects of pricing changes. Additionally, the study investigates trends in Spotify’s music charts to provide deeper insights into user behavior. "),
         html.P("Use the navigation bar above to explore each research question and its corresponding visualizations."),
         
         html.Div([

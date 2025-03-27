@@ -123,8 +123,7 @@ def render_question3():
         # Text content from Answer.pdf
         html.Div([
             html.P("Spotify is most popular in Europe and North America, as these regions have the highest number of active users. However, North America's user engagement has been slowly decreasing, while Europe remains strong."),
-            html.P("The growth rate chart shows that Latin America and the Rest of the World (RoW) have had ups and downs, with RoW (which includes Asia, Africa, and other regions) seeing the biggest spikes in growth. This suggests that Spotify is growing fast in places like Asia and Africa. At the same time, North America's growth has been negative, meaning fewer new users or some leaving the platform."),
-            html.P("Overall, Europe and North America have the most users, but Asia, Africa, and Latin America are becoming more important as Spotify expands.")
+            html.P("The growth rate chart shows that Latin America and the Rest of the World (RoW) have had ups and downs, with RoW (which includes Asia, Africa, and other regions) seeing the biggest spikes in growth. This suggests that Spotify is growing fast in places like Asia and Africa. At the same time, North America's growth has been negative, meaning fewer new users or some leaving the platform.")
         ], className="text-explanation"),
         
         # Bar Chart
