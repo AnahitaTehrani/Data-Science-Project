@@ -500,7 +500,7 @@ def get_research_question_layout(question_number):
                 html.P(descriptions[question_number]),
                 html.P(f"Error loading visualization: {str(e)}", style={'color': 'red'})
             ])
-
+    # Modified layout for Question 7
     elif question_number == 7:
         try:
             return html.Div([
@@ -508,26 +508,16 @@ def get_research_question_layout(question_number):
                 html.P(questions[question_number], className="research-question"),
                 html.P(descriptions[question_number]),
                 
-                # Add dropdown for visualization selection
+                # Replace Graph with static image
                 html.Div([
-                    html.Label("Select Visualization:"),
-                    dcc.Dropdown(
-                        id='dropdown-q7',
-                        options=[
-                            {'label': 'Price vs Premium Users Correlation', 'value': 'scatter'},
-                            {'label': 'Price & Users Over Time', 'value': 'timeseries'}
-                        ],
-                        value='timeseries',
-                        clearable=False
+                    html.Img(
+                        src='/assets/sahand_1.png',  # Update with your actual filename
+                        alt='Price Impact Visualization',
+                        className='viz-image'
                     )
-                ], className='dropdown-container'),
-                
-                # Visualization container
-                html.Div([
-                    dcc.Graph(id='graph-q7')
                 ], className='viz-container'),
                 
-                # Explanation section
+                # Keep existing explanation section
                 html.Div([
                     html.H4("Price Impact Analysis"),
                     html.P([
@@ -552,7 +542,8 @@ def get_research_question_layout(question_number):
                 html.P(descriptions[question_number]),
                 html.P(f"Error loading visualization: {str(e)}", style={'color': 'red'})
             ])
-        
+
+    # Modified layout for Question 8
     elif question_number == 8:
         try:
             return html.Div([
@@ -560,12 +551,16 @@ def get_research_question_layout(question_number):
                 html.P(questions[question_number], className="research-question"),
                 html.P(descriptions[question_number]),
                 
-                # Visualization container
+                # Replace Graph with static image
                 html.Div([
-                    dcc.Graph(id='graph-q8')
+                    html.Img(
+                        src='/assets/sahand_2.png',  # Update with your actual filename
+                        alt='Track Popularity Visualization',
+                        className='viz-image'
+                    )
                 ], className='viz-container'),
                 
-                # Explanation section
+                # Keep existing explanation section
                 html.Div([
                     html.H4("Track Popularity Analysis"),
                     html.P([
@@ -590,7 +585,8 @@ def get_research_question_layout(question_number):
                 html.P(descriptions[question_number]),
                 html.P(f"Error loading visualization: {str(e)}", style={'color': 'red'})
             ])
-            
+
+ 
 # Imprint page layout
 def get_imprint_layout():
     return html.Div([
@@ -760,61 +756,6 @@ def update_graph_q5(selected_demographic):
 )
 def update_map_visualization(selected_year):
     return update_map(selected_year)
-
-@app.callback(
-    Output('graph-q7', 'figure'),
-    [Input('dropdown-q7', 'value')]
-)
-def update_graph_q7(selected_viz):
-    try:
-        # Load the data
-        price_df = load_price_data()
-        premium_df = load_premium_data()
-        
-        if price_df.empty or premium_df.empty:
-            raise Exception("Failed to load data files")
-            
-        # Create the visualization using the function from q7_visualization.py
-        fig = create_price_impact_visualization(price_df, premium_df, selected_viz)
-        return fig
-    except Exception as e:
-        # Return an empty figure with error message
-        return {
-            'data': [],
-            'layout': {
-                'title': f"Error loading visualization: {str(e)}",
-                'height': 500
-            }
-        }
-
-# Callback for research question 8 - Track popularity visualization
-@app.callback(
-    Output('graph-q8', 'figure'),
-    [Input('url', 'pathname')]  # Using URL as a trigger so the graph loads when page is visited
-)
-def update_graph_q8(pathname):
-    if pathname != '/question8':
-        raise dash.exceptions.PreventUpdate
-        
-    try:
-        # Load the data
-        tracks_df, playlists_df = load_tracks_data()
-        
-        if tracks_df.empty or playlists_df.empty:
-            raise Exception("Failed to load data files")
-            
-        # Create the visualization using the function from q8_visualization.py
-        fig = create_track_popularity_visualization(tracks_df, playlists_df)
-        return fig
-    except Exception as e:
-        # Return an empty figure with error message
-        return {
-            'data': [],
-            'layout': {
-                'title': f"Error loading visualization: {str(e)}",
-                'height': 500
-            }
-        }
 
 # Run the app
 if __name__ == '__main__':
