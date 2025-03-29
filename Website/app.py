@@ -591,8 +591,10 @@ def get_research_question_layout(question_number):
 def get_imprint_layout():
     return html.Div([
         html.H2("Imprint"),
-        html.P("Armando Criscuolo"),
-        html.P("stu231434uni@uni-kiel.de"),
+        html.P("Armando Criscuolo (stu231434uni@uni-kiel.de)"),
+        html.P("Anahita Mesgarzadeh Tehrani"),
+        html.P("Kira Schwarz"),
+        html.P("Sahand Hamed")
     ])
 
 # Update the callback for URL routing to include Questions 3 and 6
