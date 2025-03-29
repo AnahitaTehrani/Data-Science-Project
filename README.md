@@ -1,6 +1,6 @@
 # Spotify Data Science Project - CAU Kiel
 
-This repository contains the work for a Data Science project from Kiel University (CAU) conducted by Armando Criscuolo, Anahita ..., Kira ..., and Sahand .... The project focuses on analyzing various aspects of Spotify, the leading global music streaming platform.
+This repository contains the work for a Data Science project from Kiel University (CAU) conducted by Armando Criscuolo, Anahita Mesgarzadeh Tehrani, Kira Schwarz and Sahand Hamed. The project focuses on analyzing various aspects of Spotify, the leading global music streaming platform.
 
 ## Project Overview
 
