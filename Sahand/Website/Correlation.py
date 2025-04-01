@@ -13,13 +13,13 @@ def load_csv_correctly(file_path):
        if len(df_comma.columns) > 1:
            return df_comma  # Comma worked
    except Exception:
-       pass  # Failed, will try semicolon
+       pass  # if Failed, will try semicolon
 
    df_semicolon = pd.read_csv(file_path, sep=";", encoding="utf-8")
    if len(df_semicolon.columns) > 1:
        return df_semicolon  # Semicolon worked
 
-   # Last resort - just load it somehow
+   
    return pd.read_csv(file_path, encoding="utf-8")
 
 
@@ -27,7 +27,7 @@ def load_csv_correctly(file_path):
 tracks_df = load_csv_correctly("playlist_tracks_cleaned.csv")
 playlists_df = load_csv_correctly("spotify_top_playlists.csv")
 
-# Checking if my columns look right
+# Checking if my columns are right
 print("Columns in tracks_df:", tracks_df.columns)
 print("Columns in playlists_df:", playlists_df.columns)
 
@@ -39,7 +39,7 @@ if "followers" not in playlists_df.columns:
            playlists_df.rename(columns={name: "followers"}, inplace=True)
            break
    else:
-       # Can't find followers column, making one with zeros
+       
        playlists_df["followers"] = 0
 
 # More column fixing
