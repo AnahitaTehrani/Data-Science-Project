@@ -1,21 +1,17 @@
-# This code was made by me with the help from Chat gpt
-
-
+# Loading and cleaning data from CSV files
 import pandas as pd
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 import matplotlib.pyplot as plt
 
-# 1. Load and clean raw data from CSV files
-# ======================
-
+# Read the raw data from files
 with open("Price change Spotify.csv", encoding="utf-8") as f:
     raw_price_lines = f.readlines()
 
 with open("Spotify premium user.csv", encoding="utf-8") as f:
     raw_premium_lines = f.readlines()
 
-# Extract price data from raw lines
+# Clean up the price data - skip header row and fix formatting
 price_clean = []
 for line in raw_price_lines[1:]:
     parts = line.strip().split(";")
@@ -29,7 +25,7 @@ for line in raw_price_lines[1:]:
     except:
         continue
 
-# Extract premium user data from raw lines
+# Clean up the premium user data an skip the header rows
 premium_clean = []
 for line in raw_premium_lines[2:]:
     parts = line.strip().split(";")
@@ -45,7 +41,7 @@ for line in raw_premium_lines[2:]:
     except:
         continue
 
-# Define price periods with start and end dates
+# Figure out what the start and end dates for each price period are
 price_periods = []
 for period_str, price in price_clean:
     if "–" in period_str or "-" in period_str:
@@ -67,34 +63,30 @@ for period_str, price in price_clean:
     elif "Since" in period_str:
         try:
             start_date = datetime.strptime(period_str.replace("Since", "").strip(), "%B %Y")
-            end_date = datetime(2100, 1, 1)
+            end_date = datetime(2100, 1, 1)  # Far future date for "Since" entries
         except:
             continue
     else:
         continue
     price_periods.append((start_date, end_date, price))
 
-# Function to match date with corresponding price
+# Helper function to find the price for a given date
 def match_price(date):
     for start, end, price in price_periods:
         if start <= date <= end:
             return price
     return None
 
-# Create final DataFrame with matched price and premium users
+# Create the final dataframe with both 1. price and 2. user data
 premium_df = pd.DataFrame(premium_clean, columns=["Date", "PremiumUsers_Mio"])
 premium_df["Price_EUR"] = premium_df["Date"].apply(match_price)
 final_df = premium_df.dropna()
 
-# 2. Calculate correlation between price and premium users
-# ======================
-
+# Check the correlation between the price and the users
 print("Correlation:")
 print(final_df[["Price_EUR", "PremiumUsers_Mio"]].corr())
 
-# 3. Create scatter plot of price vs premium users
-# ======================
-
+# Make a scatter plot to visualize the relationship
 plt.figure(figsize=(8, 5))
 plt.scatter(final_df["Price_EUR"], final_df["PremiumUsers_Mio"], s=60)
 plt.title("Correlation Between Spotify Price and Number of Premium Users")
@@ -104,9 +96,7 @@ plt.grid(True)
 plt.tight_layout()
 plt.show()
 
-# 4. Create time series chart of price and premium users
-# ======================
-
+# Create a time series chart to see how both changed over time
 fig, ax1 = plt.subplots(figsize=(10, 5))
 ax1.set_xlabel("Year")
 ax1.set_ylabel("Premium Users (Mio)", color='tab:blue')
